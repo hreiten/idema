@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/idema/static/css/main.5f361e03.chunk.css",
+    "main.js": "/idema/static/js/main.f5fd6588.chunk.js",
+    "main.js.map": "/idema/static/js/main.f5fd6588.chunk.js.map",
+    "runtime-main.js": "/idema/static/js/runtime-main.92132d60.js",
+    "runtime-main.js.map": "/idema/static/js/runtime-main.92132d60.js.map",
+    "static/js/2.0e864055.chunk.js": "/idema/static/js/2.0e864055.chunk.js",
+    "static/js/2.0e864055.chunk.js.map": "/idema/static/js/2.0e864055.chunk.js.map",
+    "index.html": "/idema/index.html",
+    "precache-manifest.41648b395d55aeb32f2599d71e606528.js": "/idema/precache-manifest.41648b395d55aeb32f2599d71e606528.js",
+    "service-worker.js": "/idema/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/idema/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.0e864055.chunk.js.LICENSE.txt": "/idema/static/js/2.0e864055.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/idema/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92132d60.js",
+    "static/js/2.0e864055.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.f5fd6588.chunk.js"
+  ]
+}
