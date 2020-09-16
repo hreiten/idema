@@ -1,8 +1,11 @@
+import '@bekk/storybook/build/lib/constants/styles.css';
+import '@bekk/storybook/build/lib/fonts/webfonts.css';
+
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
-import Header from './components/Header';
+import Header, { RoutePaths } from './Menu/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -16,16 +19,14 @@ const App = () => (
     <Header />
     <Route
       render={({ location }) => (
-        <AnimatePresence initial={false}>
-          <Switch location={location} key={location.pathname}>
-            <Route path="/produkter" component={Products} />
-            <Route path="/prosjekter" component={Projects} />
-            <Route path="/kontakt" component={Kontaktinfo} />
-            <Route path="/forretningsområder" component={BusinessArea} />
-            <Route path="/om" component={About} />
-            <Route path="/" component={Home} />
-          </Switch>
-        </AnimatePresence>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path={RoutePaths.PRODUCTS} component={Products} />
+          <Route exact path={RoutePaths.PROJECTS} component={Projects} />
+          <Route exact path={RoutePaths.CONTACT} component={Kontaktinfo} />
+          <Route exact path={RoutePaths.BUSINESS_AREAS} component={BusinessArea} />
+          <Route exact path={RoutePaths.ABOUT} component={About} />
+          <Route exact path={RoutePaths.LANDING} component={Home} />
+        </Switch>
       )}
     />
     <Footer />
