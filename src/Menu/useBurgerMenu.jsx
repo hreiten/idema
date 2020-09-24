@@ -5,8 +5,8 @@ import { useOnClickOutside } from '../helpers/useOnClickOutside';
 
 const BurgerMenu = ({ ref, open, setOpen }) => (
   <div ref={ref}>
-    <Burger open={open} setOpen={setOpen} />
     <Menu open={open} setOpen={setOpen} />
+    <Burger open={open} setOpen={setOpen} />
   </div>
 );
 

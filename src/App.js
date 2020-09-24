@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 
 import Header, { RoutePaths } from './Menu/Header';
 import Footer from './components/Footer';
-import Home from './components/Home';
+import Home from './LandingPage/Home.tsx';
 import Projects from './components/Projects';
 import Kontaktinfo from './components/KontaktOss';
 import BusinessArea from './components/Business';
