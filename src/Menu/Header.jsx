@@ -7,12 +7,12 @@ import { ScreenSize } from '../shared/ScreenSize';
 import BurgerMenu from './BurgerMenu';
 
 export const RoutePaths = {
-  PRODUCTS: '/produkter',
-  PROJECTS: '/projects',
-  CONTACT: '/kontakt',
-  BUSINESS_AREAS: '/forretningsområder',
-  ABOUT: '/om',
-  LANDING: '/',
+  PRODUCTS: '/idema/produkter',
+  PROJECTS: '/idema/projects',
+  CONTACT: '/idema/kontakt',
+  BUSINESS_AREAS: '/idema/forretningsområder',
+  ABOUT: '/idema/om',
+  LANDING: '/idema',
 };
 
 const menuItems = [
@@ -44,11 +44,6 @@ const MenuItemsWrapper = styled.div`
 
 const MenuItem = styled(Link)`
   margin-right: 20px;
-
-  &:hover {
-    font-weight: bold;
-    text-decoration: underline;
-  }
 `;
 
 const Logo = styled(Link)`
