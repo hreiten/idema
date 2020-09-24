@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import IdemaLogo from '../images/logo.jpg';
 import styled from 'styled-components';
 import { useMedia } from '../helpers/useMedia';
-import useBurgerMenu from './useBurgerMenu';
 import { ScreenSize } from '../shared/ScreenSize';
-import { LocalGasStation } from '@material-ui/icons';
+import Burger from './BurgerMenu';
 
 export const RoutePaths = {
   PRODUCTS: '/produkter',
@@ -16,22 +15,27 @@ export const RoutePaths = {
   LANDING: '/',
 };
 
-const sections = [
-  { title: 'Hjem', url: RoutePaths.LANDING },
-  { title: 'Produkter', url: RoutePaths.PRODUCTS },
-  { title: 'Prosjekter', url: RoutePaths.PROJECTS },
-  { title: 'Kontakt oss', url: RoutePaths.CONTACT },
-  { title: 'Om oss', url: RoutePaths.ABOUT },
+const menuItems = [
+  { title: 'Hjem', path: RoutePaths.LANDING },
+  { title: 'Produkter', path: RoutePaths.PRODUCTS },
+  { title: 'Prosjekter', path: RoutePaths.PROJECTS },
+  { title: 'Kontakt oss', path: RoutePaths.CONTACT },
+  { title: 'Om oss', path: RoutePaths.ABOUT },
 ];
 
 const Container = styled.div`
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgrey;
   width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+  @media (min-width: ${ScreenSize.LG_MAX}) {
+    padding: 0 10%;
+  }
 `;
 
 const MenuItemsWrapper = styled.div`
@@ -40,38 +44,42 @@ const MenuItemsWrapper = styled.div`
 
 const MenuItem = styled(Link)`
   margin-right: 15px;
-`;
 
-const Logo = styled(Link)`
-  width: 200px;
-
-  @media (max-width: ${ScreenSize.SM_MAX}) {
-    width: 150px;
+  &:hover {
+    font-weight: bold;
+    text-decoration: underline;
   }
 `;
 
-export default function Header() {
-  const isSmallScreen = useMedia(`(max-width: ${ScreenSize.SM_MAX})`);
-  const { open, BurgerMenu } = useBurgerMenu();
+const Logo = styled(Link)`
+  width: 30%;
+  max-width: 150px;
+  min-width: 100px;
+`;
 
-  return (
+const Header = () => {
+  const isSmallScreen = useMedia(`(max-width: ${ScreenSize.SM_MAX})`);
+
+  const menuContents = isSmallScreen ? (
+    <Burger menuItems={menuItems} />
+  ) : (
     <>
-      <Container>
-        <MenuItemsWrapper>
-          {isSmallScreen ? (
-            <BurgerMenu />
-          ) : (
-            sections.map((section) => (
-              <MenuItem key={section.title} to={section.url}>
-                {section.title}
-              </MenuItem>
-            ))
-          )}
-        </MenuItemsWrapper>
-        <Logo to={RoutePaths.LANDING}>
-          <img src={IdemaLogo} alt="IdemaLogo2" style={{ width: '100%' }} />
-        </Logo>
-      </Container>
+      {menuItems.map((item) => (
+        <MenuItem key={item.title} to={item.path}>
+          {item.title}
+        </MenuItem>
+      ))}
     </>
   );
-}
+
+  return (
+    <Container>
+      <MenuItemsWrapper>{menuContents}</MenuItemsWrapper>
+      <Logo to={RoutePaths.LANDING}>
+        <img src={IdemaLogo} alt="IdemaLogo2" style={{ width: '100%' }} />
+      </Logo>
+    </Container>
+  );
+};
+
+export default Header;

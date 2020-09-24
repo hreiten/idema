@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
         --font-size-s: 20px; 
         --font-size-xs: 16px;
 
+        --idema-color: #20327a;
         --text-color: black;
         --title-color: blue;
         --background-color: white;
