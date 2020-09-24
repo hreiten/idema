@@ -25,9 +25,12 @@ const GlobalStyles = createGlobalStyle`
         font-family: var(--serif-font);
     }
 
+    p,
+    a,
     span {
-      color: blue;
-      font-size: var(--font-size-s)
+      color: var(--text-color);
+      font-size: var(--font-size-s);
+      font-family: var(--sans-serif-font);
     }
 
     html {
