@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/idema/static/css/main.5f361e03.chunk.css",
-    "main.js": "/idema/static/js/main.f5fd6588.chunk.js",
-    "main.js.map": "/idema/static/js/main.f5fd6588.chunk.js.map",
-    "runtime-main.js": "/idema/static/js/runtime-main.92132d60.js",
-    "runtime-main.js.map": "/idema/static/js/runtime-main.92132d60.js.map",
-    "static/js/2.0e864055.chunk.js": "/idema/static/js/2.0e864055.chunk.js",
-    "static/js/2.0e864055.chunk.js.map": "/idema/static/js/2.0e864055.chunk.js.map",
+    "main.js": "/idema/static/js/main.ef9d8a78.chunk.js",
+    "runtime-main.js": "/idema/static/js/runtime-main.f6ae7148.js",
+    "static/css/2.b7d328a2.chunk.css": "/idema/static/css/2.b7d328a2.chunk.css",
+    "static/js/2.e15514fd.chunk.js": "/idema/static/js/2.e15514fd.chunk.js",
     "index.html": "/idema/index.html",
-    "precache-manifest.41648b395d55aeb32f2599d71e606528.js": "/idema/precache-manifest.41648b395d55aeb32f2599d71e606528.js",
+    "precache-manifest.98bd893719461c7c33ba8f379e3d0638.js": "/idema/precache-manifest.98bd893719461c7c33ba8f379e3d0638.js",
     "service-worker.js": "/idema/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/idema/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.0e864055.chunk.js.LICENSE.txt": "/idema/static/js/2.0e864055.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/idema/static/media/logo.5d5d9eef.svg"
+    "static/js/2.e15514fd.chunk.js.LICENSE.txt": "/idema/static/js/2.e15514fd.chunk.js.LICENSE.txt",
+    "static/media/webfonts.css": "/idema/static/media/e0df2bb1-32d4-4f28-a889-9e712e9e5032.a161abd6.eot",
+    "static/media/Lhl-vindu.jpg": "/idema/static/media/Lhl-vindu.c3041a72.jpg",
+    "static/media/forsideBilde.jpg": "/idema/static/media/forsideBilde.b5220516.jpg",
+    "static/media/kjokkenFornebu.jpg": "/idema/static/media/kjokkenFornebu.28927745.jpg",
+    "static/media/lhl-resepsjon.jpg": "/idema/static/media/lhl-resepsjon.18d7186c.jpg",
+    "static/media/statoil.jpg": "/idema/static/media/statoil.f638009d.jpg",
+    "static/media/the-well-stoler.jpg": "/idema/static/media/the-well-stoler.7ace77db.jpg",
+    "static/media/ulriksdalSykehus.jpg": "/idema/static/media/ulriksdalSykehus.dc242d70.jpg",
+    "static/media/valle-lab.jpg": "/idema/static/media/valle-lab.745b8937.jpg",
+    "static/media/voss-vgs.jpg": "/idema/static/media/voss-vgs.31ef5c20.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.92132d60.js",
-    "static/js/2.0e864055.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.f5fd6588.chunk.js"
+    "static/js/runtime-main.f6ae7148.js",
+    "static/css/2.b7d328a2.chunk.css",
+    "static/js/2.e15514fd.chunk.js",
+    "static/js/main.ef9d8a78.chunk.js"
   ]
 }
