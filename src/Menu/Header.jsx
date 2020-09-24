@@ -2,22 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import IdemaLogo from '../images/logo.jpg';
 import styled from 'styled-components';
-import { useMedia } from '../helpers/useMediaSize';
+import { useMedia } from '../helpers/useMedia';
 import useBurgerMenu from './useBurgerMenu';
-
-export const ScreenSize = {
-  XS_MIN: '340px',
-  XS_MAX: '480px',
-  SM_MIN: '481px',
-  SM_MAX: '768px',
-  MD_MIN: '769px',
-  MD_MAX: '992px',
-  LG_MIN: '993px',
-  LG_MID: '1150px',
-  LG_MAX: '1499px',
-  XL_MIN: '1500px',
-  XL_MAX: '1849px',
-};
+import { ScreenSize } from '../shared/ScreenSize';
+import { LocalGasStation } from '@material-ui/icons';
 
 export const RoutePaths = {
   PRODUCTS: '/produkter',
@@ -54,13 +42,20 @@ const MenuItem = styled(Link)`
   margin-right: 15px;
 `;
 
+const Logo = styled(Link)`
+  width: 200px;
+
+  @media (max-width: ${ScreenSize.SM_MAX}) {
+    width: 150px;
+  }
+`;
+
 export default function Header() {
   const isSmallScreen = useMedia(`(max-width: ${ScreenSize.SM_MAX})`);
   const { open, BurgerMenu } = useBurgerMenu();
 
   return (
     <>
-      <span style={{ color: 'red', fontSize: '30px' }}>{open}</span>
       <Container>
         <MenuItemsWrapper>
           {isSmallScreen ? (
@@ -73,9 +68,9 @@ export default function Header() {
             ))
           )}
         </MenuItemsWrapper>
-        <Link to={RoutePaths.LANDING}>
-          <img src={IdemaLogo} alt="IdemaLogo2" height="65" width="160" />
-        </Link>
+        <Logo to={RoutePaths.LANDING}>
+          <img src={IdemaLogo} alt="IdemaLogo2" style={{ width: '100%' }} />
+        </Logo>
       </Container>
     </>
   );
