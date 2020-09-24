@@ -19,6 +19,7 @@ const Burgers = styled.button`
   display: flex;
   align-items: center;
   position: relative;
+  z-index: 20;
 `;
 
 export const BurgerButton = ({ toggle }: { toggle: () => void }) => (

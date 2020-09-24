@@ -30,6 +30,7 @@ const Nav = styled(motion.nav)`
   top: 0;
   left: 0;
   bottom: 0;
+  z-index: 10;
 `;
 
 const NavBackground = styled(motion.div)`
