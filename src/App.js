@@ -13,6 +13,8 @@ import Kontaktinfo from './components/KontaktOss';
 import BusinessArea from './components/Business';
 import About from './components/About';
 import Products from './components/Products';
+import Helse from './Helse/Helse';
+import LandingPage from './Landing/Landing';
 
 const App = () => (
   <Router>
@@ -22,10 +24,11 @@ const App = () => (
         <Switch location={location} key={location.pathname}>
           <Route exact path={RoutePaths.PRODUCTS} component={Products} />
           <Route exact path={RoutePaths.PROJECTS} component={Projects} />
+          <Route exact path={RoutePaths.HELSE} component={Helse} />
           <Route exact path={RoutePaths.CONTACT} component={Kontaktinfo} />
           <Route exact path={RoutePaths.BUSINESS_AREAS} component={BusinessArea} />
           <Route exact path={RoutePaths.ABOUT} component={About} />
-          <Route exact path={RoutePaths.LANDING} component={Home} />
+          <Route exact path={RoutePaths.LANDING} component={LandingPage} />
         </Switch>
       )}
     />
