@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/idema/static/js/main.ef9d8a78.chunk.js",
+    "main.js": "/idema/static/js/main.f4331873.chunk.js",
     "runtime-main.js": "/idema/static/js/runtime-main.f6ae7148.js",
     "static/css/2.b7d328a2.chunk.css": "/idema/static/css/2.b7d328a2.chunk.css",
-    "static/js/2.e15514fd.chunk.js": "/idema/static/js/2.e15514fd.chunk.js",
+    "static/js/2.871d31f0.chunk.js": "/idema/static/js/2.871d31f0.chunk.js",
     "index.html": "/idema/index.html",
-    "precache-manifest.98bd893719461c7c33ba8f379e3d0638.js": "/idema/precache-manifest.98bd893719461c7c33ba8f379e3d0638.js",
+    "precache-manifest.292549c70a92f6376d80a5c7cc183857.js": "/idema/precache-manifest.292549c70a92f6376d80a5c7cc183857.js",
     "service-worker.js": "/idema/service-worker.js",
-    "static/js/2.e15514fd.chunk.js.LICENSE.txt": "/idema/static/js/2.e15514fd.chunk.js.LICENSE.txt",
+    "static/js/2.871d31f0.chunk.js.LICENSE.txt": "/idema/static/js/2.871d31f0.chunk.js.LICENSE.txt",
     "static/media/webfonts.css": "/idema/static/media/e0df2bb1-32d4-4f28-a889-9e712e9e5032.a161abd6.eot",
     "static/media/Lhl-vindu.jpg": "/idema/static/media/Lhl-vindu.c3041a72.jpg",
     "static/media/forsideBilde.jpg": "/idema/static/media/forsideBilde.b5220516.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.f6ae7148.js",
     "static/css/2.b7d328a2.chunk.css",
-    "static/js/2.e15514fd.chunk.js",
-    "static/js/main.ef9d8a78.chunk.js"
+    "static/js/2.871d31f0.chunk.js",
+    "static/js/main.f4331873.chunk.js"
   ]
 }
