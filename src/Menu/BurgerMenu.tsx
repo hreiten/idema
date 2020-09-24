@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion, useCycle } from 'framer-motion';
-import { MenuToggle } from './BurgerButton';
+import { BurgerButton } from './BurgerButton';
 import { Navigation } from './BurgerContent';
 import styled from 'styled-components';
+import { ScreenSize } from '../shared/ScreenSize';
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -14,9 +15,9 @@ const sidebar = {
     },
   }),
   closed: {
-    clipPath: 'circle(30px at 40px 40px)',
+    clipPath: 'circle(0px at 40px 40px)',
     transition: {
-      delay: 0.5,
+      delay: 0.3,
       type: 'spring',
       stiffness: 400,
       damping: 40,
@@ -38,6 +39,10 @@ const NavBackground = styled(motion.div)`
   bottom: 0;
   width: 300px;
   background: lightblue;
+
+  @media (max-width: ${ScreenSize.SM_MIN}) {
+    width: 100vw;
+  }
 `;
 
 export interface MenuItems {
@@ -45,19 +50,19 @@ export interface MenuItems {
   path: string;
 }
 
-const Burger = ({ menuItems, toggleMenu }: { menuItems: MenuItems[]; toggleMenu: () => void }) => {
+const Burger = ({ menuItems }: { menuItems: MenuItems[] }) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <>
-      <Nav initial={false} animate={isOpen ? 'open' : 'closed'}>
+    <motion.div initial={false} animate={isOpen ? 'open' : 'closed'}>
+      <Nav>
         <NavBackground variants={sidebar}>
-          <MenuToggle toggle={() => toggleOpen()} />
-
-          <Navigation toggle={() => toggleOpen()} menuItems={menuItems} />
+          <Navigation toggle={toggleOpen} menuItems={menuItems} />
         </NavBackground>
       </Nav>
-    </>
+
+      <BurgerButton toggle={toggleOpen} />
+    </motion.div>
   );
 };
 

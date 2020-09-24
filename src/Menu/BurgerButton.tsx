@@ -3,28 +3,27 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 const Path = (props: any) => (
-  <motion.path fill="transparent" strokeWidth="3" stroke="black" strokeLinecap="round" {...props} />
+  <motion.path fill="transparent" strokeWidth="2" stroke="var(--idema-color)" strokeLinecap="round" {...props} />
 );
 
-const BurgerButton = styled.button`
+const Burgers = styled.button`
   border: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   cursor: pointer;
-  position: absolute;
-  top: 18px;
-  left: 15px;
 
   width: 50px;
   height: 50px;
 
-  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
 `;
 
-export const MenuToggle = ({ toggle }: { toggle: () => void }) => (
-  <BurgerButton onClick={toggle}>
-    <svg width="50%" viewBox="0 0 23 23">
+export const BurgerButton = ({ toggle }: { toggle: () => void }) => (
+  <Burgers onClick={toggle}>
+    <svg width="100%" viewBox="0 0 23 23">
       <Path
         variants={{
           closed: { d: 'M 2 2.5 L 20 2.5' },
@@ -46,5 +45,5 @@ export const MenuToggle = ({ toggle }: { toggle: () => void }) => (
         }}
       />
     </svg>
-  </BurgerButton>
+  </Burgers>
 );

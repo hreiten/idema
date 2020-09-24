@@ -53,13 +53,13 @@ const TextPlaceholder = styled(Link)`
   border-radius: 5px;
   width: 200px;
   flex: 1;
-  border: 2px solid var(--background-color);
+  border: 2px solid var(--idema-color);
   padding: 10px 20px;
   background-color: transparent;
 
   display: flex;
   align-items: center;
-  color: var(--background-color);
+  color: var(--idema-color);
   font-family: var(--sans-serif-bold);
 `;
 
