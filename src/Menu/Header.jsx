@@ -3,35 +3,39 @@ import { Link } from 'react-router-dom';
 import IdemaLogo from '../images/logo.jpg';
 import styled from 'styled-components';
 import { useMedia } from '../helpers/useMedia';
-import useBurgerMenu from './useBurgerMenu';
 import { ScreenSize } from '../shared/ScreenSize';
-import { LocalGasStation } from '@material-ui/icons';
+import BurgerMenu from './BurgerMenu';
 
 export const RoutePaths = {
-  PRODUCTS: '/produkter',
-  PROJECTS: '/projects',
-  CONTACT: '/kontakt',
-  BUSINESS_AREAS: '/forretningsområder',
-  ABOUT: '/om',
-  LANDING: '/',
+  PRODUCTS: '/idema/produkter',
+  PROJECTS: '/idema/projects',
+  CONTACT: '/idema/kontakt',
+  BUSINESS_AREAS: '/idema/forretningsområder',
+  ABOUT: '/idema/om',
+  LANDING: '/idema',
 };
 
-const sections = [
-  { title: 'Hjem', url: RoutePaths.LANDING },
-  { title: 'Produkter', url: RoutePaths.PRODUCTS },
-  { title: 'Prosjekter', url: RoutePaths.PROJECTS },
-  { title: 'Kontakt oss', url: RoutePaths.CONTACT },
-  { title: 'Om oss', url: RoutePaths.ABOUT },
+const menuItems = [
+  { title: 'Hjem', path: RoutePaths.LANDING },
+  { title: 'Produkter', path: RoutePaths.PRODUCTS },
+  { title: 'Prosjekter', path: RoutePaths.PROJECTS },
+  { title: 'Kontakt oss', path: RoutePaths.CONTACT },
+  { title: 'Om oss', path: RoutePaths.ABOUT },
 ];
 
 const Container = styled.div`
-  border-bottom: 1px solid grey;
   width: 100%;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+
+  padding: 10px 10%;
+
+  @media (max-width: ${ScreenSize.LG_MIN}) {
+    padding: 10px 5%;
+  }
 `;
 
 const MenuItemsWrapper = styled.div`
@@ -39,39 +43,40 @@ const MenuItemsWrapper = styled.div`
 `;
 
 const MenuItem = styled(Link)`
-  margin-right: 15px;
+  margin-right: 20px;
 `;
 
 const Logo = styled(Link)`
-  width: 200px;
-
-  @media (max-width: ${ScreenSize.SM_MAX}) {
-    width: 150px;
-  }
+  width: 30%;
+  max-width: 150px;
+  min-width: 100px;
 `;
 
-export default function Header() {
+const Header = () => {
   const isSmallScreen = useMedia(`(max-width: ${ScreenSize.SM_MAX})`);
-  const { open, BurgerMenu } = useBurgerMenu();
 
   return (
-    <>
+    <div style={{ borderBottom: '1px solid lightgrey' }}>
       <Container>
         <MenuItemsWrapper>
           {isSmallScreen ? (
-            <BurgerMenu />
+            <BurgerMenu menuItems={menuItems} />
           ) : (
-            sections.map((section) => (
-              <MenuItem key={section.title} to={section.url}>
-                {section.title}
-              </MenuItem>
-            ))
+            <>
+              {menuItems.map((item) => (
+                <MenuItem key={item.title} to={item.path}>
+                  {item.title}
+                </MenuItem>
+              ))}
+            </>
           )}
         </MenuItemsWrapper>
         <Logo to={RoutePaths.LANDING}>
           <img src={IdemaLogo} alt="IdemaLogo2" style={{ width: '100%' }} />
         </Logo>
       </Container>
-    </>
+    </div>
   );
-}
+};
+
+export default Header;

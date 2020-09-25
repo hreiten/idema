@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
         --font-size-s: 20px; 
         --font-size-xs: 16px;
 
+        --idema-color: #20327a;
         --text-color: black;
         --title-color: blue;
         --background-color: white;
@@ -23,12 +24,20 @@ const GlobalStyles = createGlobalStyle`
         font-size: 16px;
         line-height: 1.375em;
         width: 100%;
+        height: 100%;
         margin: 0;
+        padding: 0;
 
         color: var(--text-color);
         background-color: var(--background-color);
 
-        padding-bottom: 80px
+        
+    }
+
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 
     h1,
@@ -45,10 +54,14 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a {
-        color: var(--text-color);
         transition: color 0.3s var(--easing);
         text-decoration: none; 
         cursor: pointer;
+
+        &:hover {
+            font-weight: bold;
+            text-decoration: underline;
+        }
     }
 
     ul {
