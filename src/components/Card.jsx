@@ -28,9 +28,7 @@ const Card = ({ title, description, src, alt, url }) => {
       {src && <Image src={src} alt={alt} />}
       <h3>{title}</h3>
       <Description>{description}</Description>
-      <Action to={url} exact>
-        Les mer
-      </Action>
+      <Action to={url}>Les mer</Action>
     </Container>
   );
 };

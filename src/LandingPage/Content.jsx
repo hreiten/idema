@@ -5,54 +5,54 @@ import { ScreenSize } from '../shared/ScreenSize';
 import ResponsiveImage from '../components/ResponsiveImage';
 import { RoutePaths } from '../Menu/Header';
 
-const Content = () => {
-  const Layout = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
-    width: 100%;
-    @media (max-width: ${ScreenSize.SM_MIN}) {
-      flex-direction: column;
-    } ;
-  `;
-
-  const Column = styled.div`
-    border: 1px solid grey;
-    margin-left: auto;
-    width: 50%;
-    padding: 0 15px;
+const Layout = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  width: 100%;
+  @media (max-width: ${ScreenSize.SM_MIN}) {
     flex-direction: column;
+  } ;
+`;
 
-    ::nth-last-child() {
-      margin-right: auto;
-    }
+const Column = styled.div`
+  border: 1px solid grey;
+  margin-left: auto;
+  width: 50%;
+  padding: 0 15px;
+  flex-direction: column;
 
-    @media (max-width: ${ScreenSize.SM_MIN}) {
-      width: 100%;
-    } ;
-  `;
+  ::nth-last-child() {
+    margin-right: auto;
+  }
 
-  const TextWrapper = styled.div`
-    align-self: center;
-    text-align: end;
-    padding: 5rem;
-    @media (max-width: ${ScreenSize.SM_MIN}) {
-      padding: 1px;
-    } ;
-  `;
+  @media (max-width: ${ScreenSize.SM_MIN}) {
+    width: 100%;
+  } ;
+`;
 
-  const Text = styled.div`
-    border: 1px solid grey;
+const TextWrapper = styled.div`
+  align-self: center;
+  text-align: end;
+  padding: 5rem;
+  @media (max-width: ${ScreenSize.SM_MIN}) {
+    padding: 1px;
+  } ;
+`;
 
-    h2 {
-      flex-direction: end;
-    }
-  `;
+const Text = styled.div`
+  border: 1px solid grey;
 
-  const Linkstyle = styled(Link)`
-    border: 1px solid lightgray;
-  `;
+  h2 {
+    flex-direction: end;
+  }
+`;
 
+const Linkstyle = styled(Link)`
+  border: 1px solid lightgray;
+`;
+
+const Content = () => {
   return (
     <>
       <Layout>

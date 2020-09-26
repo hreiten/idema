@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import LargeFooter from '../components/LargeFooter';
 import { ansattList } from './ansattList';
 import { ScreenSize } from '../shared/ScreenSize';
 
@@ -42,6 +43,7 @@ const Kontakt = () => {
           ))}
         </Grid>
       </Container>
+      <LargeFooter />
     </>
   );
 };
