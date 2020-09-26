@@ -13,14 +13,16 @@ export const RoutePaths = {
   BUSINESS_AREAS: '/idema/forretningsområder',
   ABOUT: '/idema/om',
   LANDING: '/idema',
+  HELSE: '/idema/helse',
 };
 
 const menuItems = [
   { title: 'Hjem', path: RoutePaths.LANDING },
   { title: 'Produkter', path: RoutePaths.PRODUCTS },
   { title: 'Prosjekter', path: RoutePaths.PROJECTS },
-  { title: 'Kontakt oss', path: RoutePaths.CONTACT },
+  { title: 'Helse', path: RoutePaths.HELSE },
   { title: 'Om oss', path: RoutePaths.ABOUT },
+  { title: 'Kontakt oss', path: RoutePaths.CONTACT },
 ];
 
 const Container = styled.div`
@@ -44,6 +46,8 @@ const MenuItemsWrapper = styled.div`
 
 const MenuItem = styled(Link)`
   margin-right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 `;
 
 const Logo = styled(Link)`

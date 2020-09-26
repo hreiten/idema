@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ResponsiveImage from '../helpers/ResponsiveImage';
+import ResponsiveImage from '../components/ResponsiveImage';
 import sykehusbilde1 from '../images/lhl-resepsjon.jpg';
 import sykehusbilde2 from '../images/ulriksdalSykehus.jpg';
 import sykehusbilde3 from '../images/rom-lhl.jpg';
@@ -50,11 +50,6 @@ const Images = styled.div`
   display: flex;
 `;
 
-const Image = styled.img`
-  max-width: 600px;
-  max-height: 500px;
-`;
-
 const Helse = () => {
   return (
     <Container>
@@ -71,9 +66,9 @@ const Helse = () => {
       </HeadingWrapper>
       <SykehusProdukter />
       <Images>
-        <Image src={sykehusbilde2} alt="Sykehusbilde 2"></Image>
-        <Image src={sykehusbilde3} alt="Sykehusbilde 1"></Image>
-        <Image src={sykehusbilde4} alt="Sykehusbilde 2"></Image>
+        <ResponsiveImage src={sykehusbilde2} alt="Sykehusbilde 2" width={600} />
+        <ResponsiveImage src={sykehusbilde3} alt="Sykehusbilde 3" width={600} />
+        <ResponsiveImage src={sykehusbilde4} alt="Sykehusbilde 4" width={600} />
       </Images>
     </Container>
   );

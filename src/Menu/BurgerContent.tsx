@@ -50,7 +50,7 @@ const ListItem = styled(motion.li)`
 `;
 
 const TextPlaceholder = styled(Link)`
-  border-radius: 5px;
+  border-radius: 1px;
   width: 200px;
   flex: 1;
   border: 2px solid var(--idema-color);

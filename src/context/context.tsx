@@ -43,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
     h1,
     h2,
     h3 {
-        font-family: var(--serif-font), Georgia, serif;
+        font-family: var(--sans-serif-font), Georgia, serif;
     }
 
     p,

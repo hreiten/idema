@@ -5,21 +5,13 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   max-width: 250px;
-  width: 100%;
+  width: 100vw;
   margin: auto;
   border: 1px solid grey;
 `;
 
-const Content = styled.div`
-  background-color: var(--background-color-dark);
-`;
-
-const Title = styled.h3`
-  color: var(--title-color);
-`;
-
 const Description = styled.p`
-  color: var(--text-color);
+  padding: 0.5rem;
 `;
 
 const Action = styled(Link)`
@@ -34,8 +26,7 @@ const Card = ({ title, description, src, alt, url }) => {
   return (
     <Container>
       {src && <Image src={src} alt={alt} />}
-
-      <Title>{title}</Title>
+      <h3>{title}</h3>
       <Description>{description}</Description>
       <Action to={url} exact>
         Les mer
