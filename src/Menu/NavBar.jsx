@@ -1,132 +1,67 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { TransitionGroup } from 'react-transition-group';
-import { ArrowDropDown } from '@styled-icons/remix-line/ArrowDropDown';
 import { RoutePaths } from './Header';
-import { useOnClickOutside } from '../helpers/useOnClickOutside';
 
-const transitionName = 'example';
-
-const DropdownContainer = styled.div`
-  height: 250px; // this value can be higher, but needs to be set
-  min-width: 180px;
-  position: absolute;
-  overflow: hidden;
-  z-index: 100;
-
-  &.${transitionName}-enter {
-    transform: translateY(-100%);
-    transition: 0.3s cubic-bezier(0, 1, 0.5, 1);
-
-    &.${transitionName}-enter-active {
-      transform: translateY(0%);
-    }
-  }
-
-  &.${transitionName}-leave {
-    transform: translateY(0%);
-    transition: 0.3s ease-in-out;
-
-    &.${transitionName}-leave-active {
-      transform: translateY(-100%);
-    }
-  }
-`;
-
-const DropdownList = styled(motion.ul)`
-  background-color: whitesmoke;
-  padding-top: 1rem;
-  cursor: pointer;
-  opacity: 100;
-`;
-
-const DropdownItems = styled(motion.li)`
-  text-transform: uppercase;
-  padding: 1rem;
-`;
-
-const Nav = styled(motion.div)`
-  display: inline-block;
-  margin: 2rem auto 0;
-
-  a {
-    padding: 0 16px;
-  }
-`;
-
-const NavItems = styled(motion.ul)`
+const Nav = styled.ul`
+  justify-content: flex-end;
   text-transform: uppercase;
 `;
 
-const NavItem = styled(motion.li)`
-  display: inline-block;
+const NavItem = styled(Link)`
+  padding: 10px 16px;
   position: relative;
-  letter-spacing: 1px;
-  cursor: pointer;
 `;
 
-const LinkText = styled(Link)`
-  padding: 0 16px;
+const DropdownList = styled.ul`
+  position: absolute;
+  min-width: 300px;
+  min-height: fit-content;
+  overflow: hidden;
+  background-color: whitesmoke;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+  left: 10px;
 `;
 
-const Icon = styled.a`
-  font-weight: 200;
-  padding: 0;
+const DropdownListItem = styled(Link)`
+  padding: 15px 10px;
+  margin: 10px 0;
+  color: inherit;
 `;
 
-const Dropdown = () => {
+const Dropdown = ({ close, items }) => {
   return (
     <DropdownList>
-      <DropdownItems whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.95 }}>
-        <Link to={RoutePaths.HELSE}>Helse og omsorg</Link>
-      </DropdownItems>
-      <DropdownItems whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.95 }}>
-        <Link to={RoutePaths.SKOLE}>Undervisning</Link>
-      </DropdownItems>
-      <DropdownItems>
-        <Link to={RoutePaths.BARNEHAGE}>Barnehager</Link>
-      </DropdownItems>
-      <DropdownItems>
-        <Link to={RoutePaths.BYGG}>Næringsliv</Link>
-      </DropdownItems>
+      {items.map(({ path, title }) => (
+        <DropdownListItem onClick={close} key={title} to={path}>
+          {title}
+        </DropdownListItem>
+      ))}
     </DropdownList>
   );
 };
 
-const NavBar = () => {
+const NavBar = ({ dropdownMenuItems, menuItems }) => {
   const [listIsOpen, setListIsOpen] = React.useState(false);
 
   return (
     <Nav>
-      <NavItems>
-        <NavItem onClick={() => setListIsOpen(false)}>
-          <LinkText to={RoutePaths.LANDING}>Hjem</LinkText>
-        </NavItem>
-        <NavItem onMouseLeave={() => setListIsOpen(listIsOpen ? false : true)}>
-          <a onMouseEnter={() => setListIsOpen(true)}>
-            Forretningsområder
-            {/* <ArrowDropDown size="36" /> */}
-          </a>
-          <TransitionGroup transitionName={transitionName} transitionEnterTimeout={300} transitionLeaveTimeout={300}>
-            <DropdownContainer>
-              {listIsOpen ? (
-                <Dropdown onMouseOver={() => setListIsOpen(true)} onMouseLeave={() => setListIsOpen(false)} />
-              ) : (
-                <div></div>
-              )}
-            </DropdownContainer>
-          </TransitionGroup>
-        </NavItem>
-        <NavItem onClick={() => setListIsOpen(false)}>
-          <LinkText to={RoutePaths.ABOUT}>Om oss</LinkText>
-        </NavItem>
-        <NavItem onClick={() => setListIsOpen(false)}>
-          {' '}
-          <LinkText to={RoutePaths.CONTACT}>Kontakt oss</LinkText>
-        </NavItem>
-      </NavItems>
+      <NavItem to={RoutePaths.LANDING}>Hjem</NavItem>
+      <NavItem onMouseOver={() => setListIsOpen(true)} onMouseLeave={() => setListIsOpen(false)}>
+        Forretningsområder
+        {listIsOpen && (
+          <Dropdown
+            onMouseLeave={() => setListIsOpen(false)}
+            close={() => setListIsOpen(false)}
+            items={dropdownMenuItems}
+          />
+        )}
+      </NavItem>
+      <NavItem to={RoutePaths.ABOUT}>Om oss</NavItem>
+      <NavItem to={RoutePaths.CONTACT}>Kontakt Oss</NavItem>
     </Nav>
   );
 };

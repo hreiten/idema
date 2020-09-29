@@ -22,12 +22,15 @@ export const RoutePaths = {
 
 const menuItems = [
   { title: 'Hjem', path: RoutePaths.LANDING },
+  { title: 'Om oss', path: RoutePaths.ABOUT },
+  { title: 'Kontakt oss', path: RoutePaths.CONTACT },
+];
+
+const dropdownItems = [
   { title: 'Helse og omsorg', path: RoutePaths.HELSE },
   { title: 'Undervisning', path: RoutePaths.SKOLE },
   { title: 'Barnehage', path: RoutePaths.BARNEHAGE },
   { title: 'Næringsbygg', path: RoutePaths.BYGG },
-  { title: 'Om oss', path: RoutePaths.ABOUT },
-  { title: 'Kontakt oss', path: RoutePaths.CONTACT },
 ];
 
 const Container = styled.div`
@@ -49,12 +52,6 @@ const MenuItemsWrapper = styled.div`
   display: flex;
 `;
 
-const MenuItem = styled.li`
-  margin-right: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-`;
-
 const Logo = styled(Link)`
   width: 30%;
   max-width: 150px;
@@ -67,7 +64,13 @@ const Header = () => {
   return (
     <div style={{ borderBottom: '1px solid lightgrey' }}>
       <Container>
-        <MenuItemsWrapper>{isSmallScreen ? <BurgerMenu menuItems={menuItems} /> : <NavBar />}</MenuItemsWrapper>
+        <MenuItemsWrapper>
+          {isSmallScreen ? (
+            <BurgerMenu menuItems={[...menuItems, ...dropdownItems]} />
+          ) : (
+            <NavBar dropdownMenuItems={dropdownItems} menuItems={menuItems} />
+          )}
+        </MenuItemsWrapper>
         <Logo to={RoutePaths.LANDING}>
           <img src={IdemaLogo} alt="IdemaLogo2" style={{ width: '100%' }} />
         </Logo>

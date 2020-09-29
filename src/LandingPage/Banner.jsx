@@ -21,7 +21,6 @@ const Image = styled.img`
 
 const Text = styled.div`
   position: absolute;
-  z-index: 20;
   margin: 0 auto;
   padding: 2rem;
   left: 0;
@@ -62,7 +61,6 @@ const Text = styled.div`
 
 const MobileText = styled.div`
   position: absolute;
-  z-index: 20;
   margin: 0 auto;
   padding: 0.5rem;
   left: 0;
