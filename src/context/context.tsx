@@ -70,7 +70,11 @@ const GlobalStyles = createGlobalStyle`
     list-style-type: none
     }
 
-    h1,h2 {
+    h1 {
+        font-size: 2.5em
+    }
+    
+    h2 {
         font-size: 1.625em
     }
 

@@ -39,7 +39,7 @@ const NavBackground = styled(motion.div)`
   left: 0;
   bottom: 0;
   width: 300px;
-  background: lightblue;
+  background: whitesmoke;
 
   @media (max-width: ${ScreenSize.SM_MIN}) {
     width: 100vw;

@@ -5,22 +5,29 @@ import styled from 'styled-components';
 import { useMedia } from '../helpers/useMedia';
 import { ScreenSize } from '../shared/ScreenSize';
 import BurgerMenu from './BurgerMenu';
+import NavBar from './NavBar';
 
 export const RoutePaths = {
   PRODUCTS: '/idema/produkter',
-  PROJECTS: '/idema/projects',
+  PROJECTS: '/idema/prosjekter',
   CONTACT: '/idema/kontakt',
   BUSINESS_AREAS: '/idema/forretningsområder',
   ABOUT: '/idema/om',
   LANDING: '/idema',
+  HELSE: '/idema/helse',
+  SKOLE: '/idema/undervisning',
+  BARNEHAGE: '/idema/barnehager',
+  BYGG: '/idema/naeringsbygg',
 };
 
 const menuItems = [
   { title: 'Hjem', path: RoutePaths.LANDING },
-  { title: 'Produkter', path: RoutePaths.PRODUCTS },
-  { title: 'Prosjekter', path: RoutePaths.PROJECTS },
-  { title: 'Kontakt oss', path: RoutePaths.CONTACT },
+  { title: 'Helse og omsorg', path: RoutePaths.HELSE },
+  { title: 'Undervisning', path: RoutePaths.SKOLE },
+  { title: 'Barnehage', path: RoutePaths.BARNEHAGE },
+  { title: 'Næringsbygg', path: RoutePaths.BYGG },
   { title: 'Om oss', path: RoutePaths.ABOUT },
+  { title: 'Kontakt oss', path: RoutePaths.CONTACT },
 ];
 
 const Container = styled.div`
@@ -28,7 +35,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1800px;
+  max-width: 2500px;
   margin: 0 auto;
 
   padding: 10px 10%;
@@ -42,8 +49,10 @@ const MenuItemsWrapper = styled.div`
   display: flex;
 `;
 
-const MenuItem = styled(Link)`
+const MenuItem = styled.li`
   margin-right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 `;
 
 const Logo = styled(Link)`
@@ -58,19 +67,7 @@ const Header = () => {
   return (
     <div style={{ borderBottom: '1px solid lightgrey' }}>
       <Container>
-        <MenuItemsWrapper>
-          {isSmallScreen ? (
-            <BurgerMenu menuItems={menuItems} />
-          ) : (
-            <>
-              {menuItems.map((item) => (
-                <MenuItem key={item.title} to={item.path}>
-                  {item.title}
-                </MenuItem>
-              ))}
-            </>
-          )}
-        </MenuItemsWrapper>
+        <MenuItemsWrapper>{isSmallScreen ? <BurgerMenu menuItems={menuItems} /> : <NavBar />}</MenuItemsWrapper>
         <Logo to={RoutePaths.LANDING}>
           <img src={IdemaLogo} alt="IdemaLogo2" style={{ width: '100%' }} />
         </Logo>
