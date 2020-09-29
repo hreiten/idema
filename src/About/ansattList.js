@@ -30,8 +30,8 @@ export const ansattList = [
     mail: 'ole.mork.olsen@idema.no',
   },
   {
-    name: 'Sentralbord',
-    title: ' ',
+    name: ' _ ',
+    title: 'Sentralbord',
     phone: '67 51 69 00',
     mail: 'post@idema.no',
   },

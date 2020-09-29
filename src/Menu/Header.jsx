@@ -5,22 +5,27 @@ import styled from 'styled-components';
 import { useMedia } from '../helpers/useMedia';
 import { ScreenSize } from '../shared/ScreenSize';
 import BurgerMenu from './BurgerMenu';
+import NavBar from './NavBar';
 
 export const RoutePaths = {
   PRODUCTS: '/idema/produkter',
-  PROJECTS: '/idema/projects',
+  PROJECTS: '/idema/prosjekter',
   CONTACT: '/idema/kontakt',
   BUSINESS_AREAS: '/idema/forretningsområder',
   ABOUT: '/idema/om',
   LANDING: '/idema',
   HELSE: '/idema/helse',
+  SKOLE: '/idema/undervisning',
+  BARNEHAGE: '/idema/barnehage',
+  BYGG: '/idema/naeringsbygg',
 };
 
 const menuItems = [
   { title: 'Hjem', path: RoutePaths.LANDING },
-  { title: 'Produkter', path: RoutePaths.PRODUCTS },
-  { title: 'Prosjekter', path: RoutePaths.PROJECTS },
-  { title: 'Helse', path: RoutePaths.HELSE },
+  { title: 'Helse og omsorg', path: RoutePaths.HELSE },
+  { title: 'Undervisning', path: RoutePaths.SKOLE },
+  { title: 'Barnehage', path: RoutePaths.BARNEHAGE },
+  { title: 'Næringsbygg', path: RoutePaths.BYGG },
   { title: 'Om oss', path: RoutePaths.ABOUT },
   { title: 'Kontakt oss', path: RoutePaths.CONTACT },
 ];
@@ -44,7 +49,7 @@ const MenuItemsWrapper = styled.div`
   display: flex;
 `;
 
-const MenuItem = styled(Link)`
+const MenuItem = styled.li`
   margin-right: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -66,13 +71,14 @@ const Header = () => {
           {isSmallScreen ? (
             <BurgerMenu menuItems={menuItems} />
           ) : (
-            <>
-              {menuItems.map((item) => (
-                <MenuItem key={item.title} to={item.path}>
-                  {item.title}
-                </MenuItem>
-              ))}
-            </>
+            <NavBar />
+            // <>
+            //   {menuItems.map((item) => (
+            //     <MenuItem onClick={() => setListIsOpen(false)} key={item.title}>
+            //       <Link to={item.path}>{item.title}</Link>
+            //     </MenuItem>
+            //   ))}
+            // </>
           )}
         </MenuItemsWrapper>
         <Logo to={RoutePaths.LANDING}>

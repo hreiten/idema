@@ -6,8 +6,8 @@ import { ScreenSize } from '../shared/ScreenSize';
 import ResponsiveImage from '../components/ResponsiveImage';
 import sykehusbilde1 from '../images/lhl-resepsjon.jpg';
 
-import SykehusProdukter from './SykehusProdukter';
-import SykehusProsjekter from './SykehusProsjekter';
+import Byggrodukter from './Byggprodukter';
+import Byggprosjekter from './Byggprosjekter';
 
 const Container = styled.div`
   border-bottom: 1px solid grey;
@@ -34,7 +34,6 @@ const Title = styled.h2`
   display: block;
   padding: 2.5rem;
   color: white;
-  border-bottom: 1px solid hsl(230, 38%, 46%);
   font-family: var(--sans-serif-font);
 `;
 
@@ -54,11 +53,8 @@ const Helse = () => {
     <Container>
       <HeadingWrapper>
         <HeadingText>
-          <Title>Helse og omsorg</Title>
-          <Description>
-            Vi leverer alt av fast innreding til sykehus og sykehjem som feks isolasjonsrom venterom resepsjoner.... se
-            produktlisten under
-          </Description>
+          <Title>Næringsbygg</Title>
+          <Description>Vi leverer alt av fast innreding kulturbygg, hoteller og andre næringsbygg.</Description>
         </HeadingText>
         {!isSmallScreen && (
           <HeadingImage>
@@ -66,8 +62,8 @@ const Helse = () => {
           </HeadingImage>
         )}
       </HeadingWrapper>
-      <SykehusProdukter />
-      <SykehusProsjekter />
+      <Byggrodukter />
+      <Byggprosjekter />
     </Container>
   );
 };

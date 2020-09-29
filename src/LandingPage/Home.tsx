@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import Banner from './Banner';
 import { ScreenSize } from '../shared//ScreenSize';
 import BusinessAreas from './BusinessAreas';
+import Lobs from './Lobs';
 import Content from './Content';
+import { RootContainer } from '../shared/StyledComponents';
 
 const Container = styled.div`
   border: 1px solid grey;
-  margin: 5rem auto;
+  margin: 5rem;
   justify-content: space-between;
+  display: flex;
 
   @media (max-width: ${ScreenSize.SM_MAX}) {
     margin-left: 1rem;
@@ -19,7 +22,6 @@ const Container = styled.div`
 const Text = styled.div`
   color: var(--text-color);
   justify-content: center;
-  background-color: whitesmoke;
   padding: 2rem;
 
   h2 {
@@ -39,14 +41,10 @@ const Home = () => {
     // </>
     <>
       <Banner />
-      <Text>
-        <h2>Innredningsentreprenør</h2>
-        <h3>Leverer fast innredning hovedsaklig til helse, omsorgs og undervisningssektoren samt næringsbygg.</h3>
-      </Text>
-      <Container>
-        <BusinessAreas />
-      </Container>
-      <Content />
+
+      <RootContainer>
+        <Lobs />
+      </RootContainer>
     </>
   );
 };

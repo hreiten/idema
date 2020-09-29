@@ -65,7 +65,6 @@ const Content = () => {
         <Column>
           <TextWrapper>
             <Text>
-              <h2>Hva gjør vi?</h2>
               <p>
                 Vi har fokus på riktig kvalitet tilpasset kundens behov og være en god samarbeidspartner i
                 prosjektgjennomføring.

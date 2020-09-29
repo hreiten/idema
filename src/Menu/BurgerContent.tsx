@@ -53,7 +53,7 @@ const TextPlaceholder = styled(Link)`
   border-radius: 1px;
   width: 200px;
   flex: 1;
-  border: 2px solid var(--idema-color);
+  border: 1px solid var(--idema-color);
   padding: 10px 20px;
   background-color: transparent;
 

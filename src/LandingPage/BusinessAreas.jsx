@@ -6,7 +6,7 @@ import Card from '../components/Card';
 
 import undervisningsLob from '../images/forsideBilde.jpg';
 import helseLob from '../images/Lhl-vindu.jpg';
-import omsorgsLob from '../images/the-well-stoler.jpg';
+import barnehage from '../images/tBarnehage.jpg';
 import statoil from '../images/statoil.jpg';
 
 const Lobs = [
@@ -24,13 +24,13 @@ const Lobs = [
     description: 'dfghjkf ghjfghj fghjfghj fghjk ghjk ghjk',
     src: undervisningsLob,
     alt: 'Skole',
-    url: RoutePaths.UNDERVISNING,
+    url: RoutePaths.SKOLE,
   },
   {
     id: '3',
     title: 'Barnehager',
     description: 'dfghjkf ghjfghj fghjfghj fghjk ghjk ghjk hjfghj fghjk ghjk',
-    src: omsorgsLob,
+    src: barnehage,
     alt: 'hjk',
     url: RoutePaths.BARNEHAGE,
   },
@@ -46,6 +46,8 @@ const Lobs = [
 
 const Grid = styled.div`
   display: grid;
+  max-width: 1400px;
+  margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 10px;
 

@@ -19,7 +19,8 @@ const Image = styled.img`
   padding: 0.5px;
 
   ${Container}:hover & {
-    opacity: 0.3;
+    opacity: 0.4;
+    background-color: rgba(2, 24, 97);
   }
 `;
 
@@ -39,30 +40,29 @@ const Middle = styled.div`
   }
 `;
 
-const Text = styled.a`
-  background-color: var(--idema-color);
+const Text = styled(Link)`
+  background-color: rgba(2, 24, 97, 0.8);
   color: white;
   font-size: 16px;
   padding: 16px 32px;
   min-width: 80%;
+  text-transform: uppercase;
 `;
 
-export const LinkImage = ({ src, alt, url, text }) => {
+export const LobImage = ({ src, alt, url, text }) => {
   return (
     <Container>
       <Image src={src} alt={alt} />
       <Middle>
-        <Text href={url} target="_blank">
-          {text}
-        </Text>
+        <Text to={url}>{text}</Text>
       </Middle>
     </Container>
   );
 };
 
-export default LinkImage;
+export default LobImage;
 
-LinkImage.propTypes = {
+LobImage.propTypes = {
   src: PropTypes.string,
   alt: PropTypes.string,
   url: PropTypes.string,

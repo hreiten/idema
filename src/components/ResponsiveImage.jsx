@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Responsiveimage = styled.div`
   position: relative;
   max-width: 100%;
+  display: flex;
 `;
 
 const Image = styled.img`

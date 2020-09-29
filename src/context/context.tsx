@@ -43,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
     h1,
     h2,
     h3 {
-        font-family: var(--sans-serif-font), Georgia, serif;
+        font-family: var(--serif-font), Georgia, serif;
     }
 
     p,
@@ -70,7 +70,11 @@ const GlobalStyles = createGlobalStyle`
     list-style-type: none
     }
 
-    h1,h2 {
+    h1 {
+        font-size: 2.5em
+    }
+    
+    h2 {
         font-size: 1.625em
     }
 

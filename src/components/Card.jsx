@@ -10,12 +10,19 @@ const Container = styled.div`
   border: 1px solid grey;
 `;
 
-const Description = styled.p`
-  padding: 0.5rem;
+const Title = styled.h3`
+  text-align: center;
+  color: var(--idema-color);
 `;
 
-const Action = styled(Link)`
+const Description = styled.p`
+  padding-left: 0.5rem;
+`;
+
+const Action = styled.p`
   color: var(--text-color);
+  padding-right: 2rem;
+  text-align: end;
 `;
 
 const Image = styled.img`
@@ -26,9 +33,12 @@ const Card = ({ title, description, src, alt, url }) => {
   return (
     <Container>
       {src && <Image src={src} alt={alt} />}
-      <h3>{title}</h3>
+      <Title>{title}</Title>
       <Description>{description}</Description>
-      <Action to={url}>Les mer</Action>
+      <Action>
+        {' '}
+        <Link to={url}>Les mer</Link>
+      </Action>
     </Container>
   );
 };
