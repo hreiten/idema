@@ -5,7 +5,6 @@ import { barnehageProduktliste } from '../helpers/productlist';
 
 const Container = styled.div`
   border-bottom: 1px solid grey;
-  margin: 2rem 2rem 5rem;
   padding-bottom: 4rem;
 `;
 

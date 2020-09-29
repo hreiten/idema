@@ -60,7 +60,7 @@ const TextPlaceholder = styled(Link)`
   display: flex;
   align-items: center;
   color: var(--idema-color);
-  font-family: var(--sans-serif-bold);
+  /* font-family: var(--sans-serif-bold); */
 `;
 
 export const Navigation = ({ toggle, menuItems }: { toggle: () => void; menuItems: MenuItems[] }) => (

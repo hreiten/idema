@@ -16,7 +16,7 @@ export const RoutePaths = {
   LANDING: '/idema',
   HELSE: '/idema/helse',
   SKOLE: '/idema/undervisning',
-  BARNEHAGE: '/idema/barnehage',
+  BARNEHAGE: '/idema/barnehager',
   BYGG: '/idema/naeringsbygg',
 };
 
@@ -35,7 +35,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1800px;
+  max-width: 2500px;
   margin: 0 auto;
 
   padding: 10px 10%;
@@ -67,20 +67,7 @@ const Header = () => {
   return (
     <div style={{ borderBottom: '1px solid lightgrey' }}>
       <Container>
-        <MenuItemsWrapper>
-          {isSmallScreen ? (
-            <BurgerMenu menuItems={menuItems} />
-          ) : (
-            <NavBar />
-            // <>
-            //   {menuItems.map((item) => (
-            //     <MenuItem onClick={() => setListIsOpen(false)} key={item.title}>
-            //       <Link to={item.path}>{item.title}</Link>
-            //     </MenuItem>
-            //   ))}
-            // </>
-          )}
-        </MenuItemsWrapper>
+        <MenuItemsWrapper>{isSmallScreen ? <BurgerMenu menuItems={menuItems} /> : <NavBar />}</MenuItemsWrapper>
         <Logo to={RoutePaths.LANDING}>
           <img src={IdemaLogo} alt="IdemaLogo2" style={{ width: '100%' }} />
         </Logo>

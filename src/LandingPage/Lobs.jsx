@@ -23,7 +23,7 @@ const Container = styled.div`
   } ;
 `;
 
-const Text2 = styled.div`
+const Text = styled.div`
   display: flex;
   align-self: center;
   background: rgba(256, 256, 256, 0.8);
@@ -36,22 +36,30 @@ const Text2 = styled.div`
     font-size: 25px;
     font-weight: 300;
     font-family: var(--sans-serif-font);
+
+    @media (max-width: ${ScreenSize.SM_MAX}) {
+      font-size: 20px;
+    }
   }
 
   @media (max-width: ${ScreenSize.MD_MAX}) {
     padding: 10px;
     text-align: center;
     width: 100%;
+    margin-right: 0;
+    margin-top: 6rem;
+  }
+
+  @media (max-width: ${ScreenSize.SM_MAX}) {
   }
 `;
 
 const Lobs = () => {
   return (
     <Wrap>
-      <Text2>
+      <Text>
         <h3>Komplette innredningsleveranser til helse-, omsorgs- og undervisningssektoren samt næringsbygg.</h3>
-      </Text2>
-
+      </Text>
       <Container>
         <LobImage src={romlhl} alt="Link til facebookside - lhl" url={RoutePaths.HELSE} text="Helse og omsorg" />
 

@@ -19,13 +19,14 @@ const Image = styled.img`
   padding: 0.5px;
 
   ${Container}:hover & {
-    opacity: 0.4;
+    opacity: 0.5;
     background-color: rgba(2, 24, 97);
   }
 `;
 
 const Middle = styled.div`
   transition: 0.5s ease;
+  border: 1px solid var(--idema-color);
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -33,19 +34,22 @@ const Middle = styled.div`
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  display: inline-flex;
   width: fit-content;
+  min-height: 30%;
 
   ${Container}:hover & {
     opacity: 1;
+    background-color: rgba(256, 256, 256, 0.7);
   }
 `;
 
 const Text = styled(Link)`
-  background-color: rgba(2, 24, 97, 0.8);
-  color: white;
+  color: var(--idema-color);
   font-size: 16px;
   padding: 16px 32px;
   min-width: 80%;
+  align-self: center;
   text-transform: uppercase;
 `;
 

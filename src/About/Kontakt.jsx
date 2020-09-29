@@ -24,6 +24,7 @@ const Line = styled.div`
 const Title = styled.h2`
   padding-left: 5rem;
   padding-bottom: 2rem;
+  font-family: var(--sans-serif-font);
 `;
 
 const Grid = styled.div`
@@ -51,8 +52,8 @@ const Kontakt = () => {
   return (
     <>
       <Container>
-        <Title>Kontakt oss</Title>
-        <Line></Line>
+        <Title>IDEMA AS</Title>
+
         <Grid>
           {ansattList.map((a, i) => (
             <Card key={i}>

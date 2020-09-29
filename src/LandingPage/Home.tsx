@@ -19,29 +19,11 @@ const Container = styled.div`
   }
 `;
 
-const Text = styled.div`
-  color: var(--text-color);
-  justify-content: center;
-  padding: 2rem;
-
-  h2 {
-    text-align: center;
-  }
-
-  h3 {
-    text-align: center;
-  }
-`;
 const Home = () => {
   //const isSmallScreen = useMedia(`(max-width: ${ScreenSize.LG_MIN})`);
   return (
-    // <>
-    //   <h1>Hei, Marie ♥️</h1>
-    //   <span>Du er fin!</span>
-    // </>
     <>
       <Banner />
-
       <RootContainer>
         <Lobs />
       </RootContainer>

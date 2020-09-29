@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ScreenSize } from '../shared/ScreenSize';
+import { useMedia } from '../helpers/useMedia';
 import forsidebilde2 from '../images/orangekjokken.jpg';
 
 const Container = styled.div`
-  border: 1px solid grey;
   max-height: 800px;
   position: relative;
   display: inline-block;
@@ -60,43 +60,47 @@ const Text = styled.div`
   }
 `;
 
-const Text2 = styled.div`
+const MobileText = styled.div`
   position: absolute;
   z-index: 20;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 0.5rem;
   left: 0;
   right: 0;
-  top: 75%;
+  top: 60%;
   background: rgba(2, 24, 97, 0.9);
   color: #fff;
-  width: 60%;
+  width: 75%;
   text-align: center;
 
-  h2 {
-    font-size: 3em;
+  h1 {
+    font-size: 1.5em;
     font-family: var(--sans-serif-font);
   }
 
-  h3 {
-    font-size: 30px;
+  h2 {
+    font-size: 1.2em;
     font-weight: 300;
     font-family: var(--sans-serif-font);
   }
 `;
 
 const Banner = () => {
+  const isSmallScreen = useMedia(`(max-width: ${ScreenSize.SM_MAX})`);
   return (
     <Container>
       <Image src={forsidebilde2} alt="forsidebilde" width={3440} height={1174} />
-      <Text>
-        <h1>Innredningsentreprenør</h1>
-        <h2>- Alt av fast inventar</h2>
-      </Text>
-      {/* <Text2>
-        <h1>Innredningsentreprenør</h1>
-        <h2>- Alt av fast inventar</h2>
-      </Text2> */}
+      {isSmallScreen ? (
+        <MobileText>
+          <h1>Innredningsentreprenør</h1>
+          <h2>- Alt av fast inventar</h2>
+        </MobileText>
+      ) : (
+        <Text>
+          <h1>Innredningsentreprenør</h1>
+          <h2>- Alt av fast inventar</h2>
+        </Text>
+      )}
     </Container>
   );
 };
