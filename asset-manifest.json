@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/idema/static/js/main.58e5a67a.chunk.js",
+    "main.js": "/idema/static/js/main.a9cde30c.chunk.js",
     "runtime-main.js": "/idema/static/js/runtime-main.f6ae7148.js",
     "static/css/2.b7d328a2.chunk.css": "/idema/static/css/2.b7d328a2.chunk.css",
     "static/js/2.c63b83ad.chunk.js": "/idema/static/js/2.c63b83ad.chunk.js",
     "index.html": "/idema/index.html",
-    "precache-manifest.f14bbb8a4e8d4e8682433a403bd2774d.js": "/idema/precache-manifest.f14bbb8a4e8d4e8682433a403bd2774d.js",
+    "precache-manifest.944cb34729c7eea4b1e519d26708373d.js": "/idema/precache-manifest.944cb34729c7eea4b1e519d26708373d.js",
     "service-worker.js": "/idema/service-worker.js",
     "static/js/2.c63b83ad.chunk.js.LICENSE.txt": "/idema/static/js/2.c63b83ad.chunk.js.LICENSE.txt",
     "static/media/webfonts.css": "/idema/static/media/e0df2bb1-32d4-4f28-a889-9e712e9e5032.a161abd6.eot",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.f6ae7148.js",
     "static/css/2.b7d328a2.chunk.css",
     "static/js/2.c63b83ad.chunk.js",
-    "static/js/main.58e5a67a.chunk.js"
+    "static/js/main.a9cde30c.chunk.js"
   ]
 }
