@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.js": "/idema/static/js/main.faabe4f9.chunk.js",
+    "main.js": "/idema/static/js/main.6154d932.chunk.js",
     "runtime-main.js": "/idema/static/js/runtime-main.f6ae7148.js",
     "static/css/2.b7d328a2.chunk.css": "/idema/static/css/2.b7d328a2.chunk.css",
-    "static/js/2.643a7d49.chunk.js": "/idema/static/js/2.643a7d49.chunk.js",
+    "static/js/2.2d9e2718.chunk.js": "/idema/static/js/2.2d9e2718.chunk.js",
     "index.html": "/idema/index.html",
-    "precache-manifest.64a1913e19fc826eb8a749e8660a7c72.js": "/idema/precache-manifest.64a1913e19fc826eb8a749e8660a7c72.js",
+    "precache-manifest.cc58ed74da8c74b75f3679df777bd9f5.js": "/idema/precache-manifest.cc58ed74da8c74b75f3679df777bd9f5.js",
     "service-worker.js": "/idema/service-worker.js",
-    "static/js/2.643a7d49.chunk.js.LICENSE.txt": "/idema/static/js/2.643a7d49.chunk.js.LICENSE.txt",
+    "static/js/2.2d9e2718.chunk.js.LICENSE.txt": "/idema/static/js/2.2d9e2718.chunk.js.LICENSE.txt",
     "static/media/webfonts.css": "/idema/static/media/e0df2bb1-32d4-4f28-a889-9e712e9e5032.a161abd6.eot",
+    "static/media/IDEMALOGO.jpg": "/idema/static/media/IDEMALOGO.4d27645e.jpg",
     "static/media/akerbrygge1.jpg": "/idema/static/media/akerbrygge1.0df39911.jpg",
     "static/media/bodoSykehus.jpg": "/idema/static/media/bodoSykehus.e4632710.jpg",
     "static/media/holmenSkole.jpg": "/idema/static/media/holmenSkole.efa5db16.jpg",
     "static/media/kjokkenFornebu.jpg": "/idema/static/media/kjokkenFornebu.28927745.jpg",
+    "static/media/kontaktOss.png": "/idema/static/media/kontaktOss.144c2817.png",
     "static/media/lhl-resepsjon.jpg": "/idema/static/media/lhl-resepsjon.18d7186c.jpg",
     "static/media/mfBarnehage.jpg": "/idema/static/media/mfBarnehage.2fe81691.jpg",
     "static/media/omOss.jpg": "/idema/static/media/omOss.60e69294.jpg",
@@ -30,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.f6ae7148.js",
     "static/css/2.b7d328a2.chunk.css",
-    "static/js/2.643a7d49.chunk.js",
-    "static/js/main.faabe4f9.chunk.js"
+    "static/js/2.2d9e2718.chunk.js",
+    "static/js/main.6154d932.chunk.js"
   ]
 }

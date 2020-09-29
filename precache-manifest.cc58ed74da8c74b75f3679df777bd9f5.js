@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ce0f57fa01cdfb613e46355e658a099",
+    "revision": "30958cf051f8886842e70e108b772a3c",
     "url": "/idema/index.html"
   },
   {
-    "revision": "6df9c94bc82d43e324f5",
+    "revision": "1bf014e34848c9bd00f6",
     "url": "/idema/static/css/2.b7d328a2.chunk.css"
   },
   {
-    "revision": "6df9c94bc82d43e324f5",
-    "url": "/idema/static/js/2.643a7d49.chunk.js"
+    "revision": "1bf014e34848c9bd00f6",
+    "url": "/idema/static/js/2.2d9e2718.chunk.js"
   },
   {
     "revision": "c87550333da8df8ab4c80bd1d6e9defb",
-    "url": "/idema/static/js/2.643a7d49.chunk.js.LICENSE.txt"
+    "url": "/idema/static/js/2.2d9e2718.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7987b4c3f4130c70df2e",
-    "url": "/idema/static/js/main.faabe4f9.chunk.js"
+    "revision": "f26a814aaa2b5a11e6c4",
+    "url": "/idema/static/js/main.6154d932.chunk.js"
   },
   {
     "revision": "57d2e7c63bde28d1d184",
@@ -80,6 +80,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/idema/static/media/9b63158c-0e74-4751-966c-d749c5d31cce.cc126429.eot"
   },
   {
+    "revision": "4d27645e83a225ef5ac026291d58d579",
+    "url": "/idema/static/media/IDEMALOGO.4d27645e.jpg"
+  },
+  {
     "revision": "16c5475ac8a470cb61d21c4fd4ffe64f",
     "url": "/idema/static/media/NewzaldWeb-Book.16c5475a.woff"
   },
@@ -114,6 +118,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "28927745b6c19c07b835d50904eeaa1b",
     "url": "/idema/static/media/kjokkenFornebu.28927745.jpg"
+  },
+  {
+    "revision": "144c28179f94f4512b0554e16569b63e",
+    "url": "/idema/static/media/kontaktOss.144c2817.png"
   },
   {
     "revision": "18d7186c2cbe648bcf2d97a5b3545301",
