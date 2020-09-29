@@ -2,7 +2,7 @@ import '@bekk/storybook/build/lib/constants/styles.css';
 import '@bekk/storybook/build/lib/fonts/webfonts.css';
 
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Header, { RoutePaths } from './Menu/Header';
 import Footer from './components/Footer';
@@ -19,7 +19,7 @@ import { RootContainer } from './shared/StyledComponents';
 
 const App = () => (
   <div className="main-wrapper">
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Header />
 
       <Route
