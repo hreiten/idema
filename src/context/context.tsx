@@ -13,9 +13,9 @@ const GlobalStyles = createGlobalStyle`
         --font-size-s: 20px; 
         --font-size-xs: 16px;
 
-        --idema-color: #20327a;
+        --idema-color: #0A195E;
         --text-color: black;
-        --title-color: blue;
+        --title-color: #0A195E;
         --background-color: white;
     }
 

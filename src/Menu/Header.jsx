@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import IdemaLogo from '../images/logo.jpg';
+import IdemaLogo from '../images/IDEMALOGO.jpg';
 import styled from 'styled-components';
 import { useMedia } from '../helpers/useMedia';
 import { ScreenSize } from '../shared/ScreenSize';

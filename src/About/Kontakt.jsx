@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import { ansattList } from './ansattList';
 import { ScreenSize } from '../shared/ScreenSize';
+import ResponsiveImage from '../components/ResponsiveImage';
+import kontaktOss from '../images/kontaktOss.png';
 
 const Container = styled.div`
   margin-top: 2rem;
@@ -13,16 +15,17 @@ const Container = styled.div`
     margin-top: 3rem;
   }
 `;
-
-const Line = styled.div`
-  margin: 25px 0;
-  height: 1px;
-  background: black;
-  background: gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  @media (max-width: ${ScreenSize.SM_MAX}) {
+    padding: 0;
+  }
 `;
 
 const Title = styled.h2`
-  padding-left: 5rem;
+  padding-left: 2rem;
   padding-bottom: 2rem;
   font-family: var(--sans-serif-font);
 `;
@@ -52,8 +55,10 @@ const Kontakt = () => {
   return (
     <>
       <Container>
-        <Title>IDEMA AS</Title>
-
+        <Header>
+          <Title>IDEMA AS</Title>
+          <ResponsiveImage src={kontaktOss} alt="" width={200} />
+        </Header>
         <Grid>
           {ansattList.map((a, i) => (
             <Card key={i}>

@@ -25,7 +25,6 @@ const Text = styled.div`
   padding: 2rem;
   left: 0;
   top: 5%;
-  background: rgba(2, 24, 97, 0.1);
   color: #fff;
   width: 60%;
 

@@ -20,7 +20,6 @@ const Image = styled.img`
 
   ${Container}:hover & {
     opacity: 0.5;
-    background-color: rgba(2, 24, 97);
   }
 `;
 
@@ -36,7 +35,7 @@ const Middle = styled.div`
   text-align: center;
   display: inline-flex;
   width: fit-content;
-  min-height: 30%;
+  min-height: 20%;
 
   ${Container}:hover & {
     opacity: 1;

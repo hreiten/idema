@@ -27,9 +27,9 @@ const Text = styled.div`
   display: flex;
   align-self: center;
   background: rgba(256, 256, 256, 0.8);
-  color: rgba(2, 24, 97, 0.8);
+  color: rgba(10, 25, 94, 0.8);
   width: 50%;
-  padding: 20px;
+  padding: 10px;
   margin-right: 3rem;
 
   h3 {
