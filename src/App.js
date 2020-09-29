@@ -19,7 +19,7 @@ import { RootContainer } from './shared/StyledComponents';
 
 const App = () => (
   <div className="main-wrapper">
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
 
       <Route
