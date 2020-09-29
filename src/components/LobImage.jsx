@@ -7,6 +7,9 @@ const Container = styled.div`
   position: relative;
   width: 100%;
   display: flex;
+  @media (max-width: ${ScreenSize.LG_MIN}) {
+    max-height: 250px;
+  }
 `;
 
 const Image = styled.img`

@@ -1,12 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { ScreenSize } from '../shared/ScreenSize';
 
 const Container = styled.div`
   position: relative;
   width: 100%;
   display: flex;
+  @media (max-width: ${ScreenSize.SM_MAX}) {
+    max-height: 250px;
+  }
 `;
 
 const Image = styled.img`
