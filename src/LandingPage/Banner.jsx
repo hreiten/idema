@@ -8,10 +8,6 @@ const Container = styled.div`
   max-height: 800px;
   position: relative;
   display: inline-block;
-  margin-bottom: 150px;
-  @media (max-width: ${ScreenSize.MD_MAX}) {
-    margin-bottom: 10px;
-  }
 `;
 
 const Image = styled.img`
@@ -32,7 +28,6 @@ const Text = styled.div`
     font-size: 4em;
     line-height: 1.15;
     font-family: var(--sans-serif-font);
-    text-shadow: (255, 255, 255) 0px 0px 32px;
   }
 
   h2 {
@@ -51,10 +46,6 @@ const Text = styled.div`
       font-size: 1.7em;
       padding-left: 0.5rem;
     }
-  }
-
-  @media (max-width: ${ScreenSize.SM_MAX}) {
-    visibility: hidden;
   }
 `;
 
@@ -79,6 +70,7 @@ const MobileText = styled.div`
     font-size: 1.2em;
     font-weight: 300;
     font-family: var(--sans-serif-font);
+    text-transform: uppercase;
   }
 `;
 

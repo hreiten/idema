@@ -1,26 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
-import Banner from './Banner';
-import { ScreenSize } from '../shared//ScreenSize';
-import BusinessAreas from './BusinessAreas';
-import Lobs from './Lobs';
-import Content from './Content';
-import { RootContainer } from '../shared/StyledComponents';
 
-const Container = styled.div`
-  border: 1px solid grey;
-  margin: 5rem;
-  justify-content: space-between;
-  display: flex;
+import { ScreenSize } from '../shared/ScreenSize';
+import Banner from './Banner';
+import Lobs from './Lobs';
+
+export const RootContainer = styled.div`
+  width: 100vw;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 10px 10%;
+  flex: 1;
+
+  @media (max-width: ${ScreenSize.LG_MIN}) {
+    padding: 10px 5%;
+  }
 
   @media (max-width: ${ScreenSize.SM_MAX}) {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 10px 0;
   }
 `;
 
 const Home = () => {
-  //const isSmallScreen = useMedia(`(max-width: ${ScreenSize.LG_MIN})`);
   return (
     <>
       <Banner />

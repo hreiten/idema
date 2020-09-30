@@ -32,12 +32,21 @@ const TextWrapper = styled.div`
   max-width: 500px;
   @media (max-width: ${ScreenSize.SM_MIN}) {
     padding: 1px;
-  } ;
+  }
+
+  h1 {
+    font-family: var(--sans-serif-font);
+  }
+
+  h5 {
+    font-size: 20px;
+  }
 `;
 
 const Areas = styled.span`
-  display: flex;
-  flex-wrap: wrap;
+  display: flex-end;
+  max-width: 300px;
+  background-color: var(--idema-color);
 `;
 
 const ImageWrapper = styled.div`
@@ -57,13 +66,13 @@ const About = () => {
     <Container>
       <Column>
         <TextWrapper>
-          <h1>IDEMA AS</h1>
+          <h1>OM OSS</h1>
           <p>
             IDEMA AS er innredningsentrerprenør og totalleverandør av fast innredning til offentlig og privat sektor.{' '}
           </p>
           <Areas>
             <p> Våre største og viktigste forretningsområder er: </p>
-            <h5> Sykehus Sykehjem Skoler Barnehager Kulturinstitusjoner Næringsbygg Hoteller</h5>
+            <p> Sykehus, Sykehjem, Skoler, Barnehager, Kulturinstitusjoner, Næringsbygg og Hoteller</p>
           </Areas>
           <p>
             IDEMA A/S ble etablert i Trondheim i 1985 og har i dag hovedkontor på Haslum, I Bærum. Idema består av 13

@@ -10,9 +10,10 @@ import skate from '../images/skate.jpg';
 
 const Wrap = styled.div`
   display: flex;
-  margin-bottom: 5rem;
+  margin: 10rem 4rem;
   @media (max-width: ${ScreenSize.MD_MAX}) {
     flex-wrap: wrap;
+    margin: 2rem 0;
   }
 `;
 const Container = styled.div`
@@ -26,31 +27,24 @@ const Container = styled.div`
 const Text = styled.div`
   display: flex;
   align-self: center;
-  background: rgba(256, 256, 256, 0.8);
-  color: rgba(10, 25, 94, 0.8);
   width: 50%;
   padding: 10px;
   margin-right: 3rem;
 
   h3 {
-    font-size: 25px;
-    font-weight: 300;
+    color: var(--idema-color);
     font-family: var(--sans-serif-font);
-
-    @media (max-width: ${ScreenSize.SM_MAX}) {
-      font-size: 20px;
+    @media (min-width: ${ScreenSize.SM_MAX}) {
+      font-size: 25px;
     }
   }
 
   @media (max-width: ${ScreenSize.MD_MAX}) {
-    padding: 10px;
     text-align: center;
     width: 100%;
     margin-right: 0;
     margin-top: 6rem;
-  }
-
-  @media (max-width: ${ScreenSize.SM_MAX}) {
+    padding: 2.5rem 1rem;
   }
 `;
 
@@ -62,7 +56,6 @@ const Lobs = () => {
       </Text>
       <Container>
         <LobImage src={romlhl} alt="Link til facebookside - lhl" url={RoutePaths.HELSE} text="Helse og omsorg" />
-
         <LobImage src={barnehage} alt="" url={RoutePaths.BARNEHAGE} text="Barnehager" />
       </Container>
       <Container>

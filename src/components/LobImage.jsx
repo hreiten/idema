@@ -10,6 +10,7 @@ const Container = styled.div`
   display: flex;
   @media (max-width: ${ScreenSize.SM_MAX}) {
     max-height: 250px;
+    padding-top: 5px;
   }
 `;
 
