@@ -29,10 +29,4 @@ export const ansattList = [
     phone: '+47 902 11 232',
     mail: 'ole.mork.olsen@idema.no',
   },
-  {
-    name: ' _ ',
-    title: 'Sentralbord',
-    phone: '67 51 69 00',
-    mail: 'post@idema.no',
-  },
 ];

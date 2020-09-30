@@ -11,6 +11,11 @@ const Nav = styled.ul`
 const NavItem = styled(Link)`
   padding: 10px 16px;
   position: relative;
+
+  .active {
+    border-color: hsl(230, 38%, 46%);
+    border-width: 2px;
+  }
 `;
 
 const DropdownList = styled.ul`
@@ -18,7 +23,7 @@ const DropdownList = styled.ul`
   min-width: 300px;
   min-height: fit-content;
   overflow: hidden;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;

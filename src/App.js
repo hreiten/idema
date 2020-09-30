@@ -15,12 +15,14 @@ import Helse from './Helse/Helse';
 import Skole from './Skole/Skole';
 import Barnehage from './Barnehage/Barnehage';
 import Bygg from './Bygg/Bygg';
+import ScrollToTop from './helpers/ScrollToTopController';
 import { RootContainer } from './shared/StyledComponents';
 
 const App = () => (
   <div className="main-wrapper">
     <Router>
       <Header />
+      <ScrollToTop />
 
       <Route
         render={({ location }) => (
