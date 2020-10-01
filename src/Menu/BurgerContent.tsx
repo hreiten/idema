@@ -47,6 +47,7 @@ const ListItem = styled(motion.li)`
   display: flex;
   align-items: center;
   cursor: pointer;
+  transform: uppercase;
 `;
 
 const TextPlaceholder = styled(Link)`

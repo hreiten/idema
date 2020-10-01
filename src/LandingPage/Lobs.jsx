@@ -16,6 +16,7 @@ const Wrap = styled.div`
     margin: 2rem 0;
   }
 `;
+
 const Container = styled.div`
   width: 50%;
   @media (max-width: ${ScreenSize.MD_MAX}) {
@@ -27,15 +28,17 @@ const Container = styled.div`
 const Text = styled.div`
   display: flex;
   align-self: center;
+  text-align: right;
   width: 50%;
   padding: 10px;
   margin-right: 3rem;
 
   h3 {
-    color: var(--idema-color);
+    color: white;
     font-family: var(--sans-serif-font);
     @media (min-width: ${ScreenSize.SM_MAX}) {
       font-size: 25px;
+      color: var(--idema-color);
     }
   }
 
@@ -46,13 +49,18 @@ const Text = styled.div`
     margin-top: 6rem;
     padding: 2.5rem 1rem;
   }
+
+  @media (max-width: ${ScreenSize.MD_MAX}) {
+    margin-top: 0;
+    padding: 1rem;
+  };
 `;
 
 const Lobs = () => {
   return (
     <Wrap>
       <Text>
-        <h3>Komplette innredningsleveranser til helse-, omsorgs- og undervisningssektoren samt næringsbygg.</h3>
+        <h3>Vi leverer komplette innredninger til helse-, omsorgs- og undervisningssektoren samt næringsbygg.</h3>
       </Text>
       <Container>
         <LobImage src={romlhl} alt="Link til facebookside - lhl" url={RoutePaths.HELSE} text="Helse og omsorg" />

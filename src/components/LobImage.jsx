@@ -9,8 +9,10 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   @media (max-width: ${ScreenSize.SM_MAX}) {
-    max-height: 250px;
+    max-height: 350px;
+    max-width: 350px;
     padding-top: 5px;
+    margin: auto;
   }
 `;
 

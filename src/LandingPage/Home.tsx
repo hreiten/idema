@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { useMedia } from '../helpers/useMedia';
 import { ScreenSize } from '../shared/ScreenSize';
+import ResponsiveImage from '../components/ResponsiveImage';
 import Banner from './Banner';
+import MobilImg from '../images/lhl-resepsjon.jpg';
 import Lobs from './Lobs';
 
-export const RootContainer = styled.div`
+const RootContainer = styled.div`
   width: 100vw;
   max-width: 2000px;
   margin: 0 auto;
@@ -21,8 +23,32 @@ export const RootContainer = styled.div`
   }
 `;
 
+const MobileContainer = styled.div`
+  background-color: var(--idema-color);
+  position: relative;
+  
+`;
+
+const Text = styled.div`
+  position: absolute;
+  top: 100px;;
+  left: 20px;
+  
+  h2 {
+    color: white;
+    font-family: var(--sans-serif-font)
+  }
+`;
+
 const Home = () => {
-  return (
+  const isSmallScreen = useMedia(`(max-width: ${ScreenSize.SM_MAX})`);
+  return ( 
+    isSmallScreen ? 
+    <MobileContainer>
+    <ResponsiveImage src={MobilImg} alt="" width={600} height={50}/>
+    <Text><h2>Innredningsentrepenør<br/>- Alt av fast innrednig</h2></Text>
+    <Lobs/>
+    </MobileContainer> :
     <>
       <Banner />
       <RootContainer>
