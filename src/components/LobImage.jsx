@@ -8,10 +8,11 @@ const Container = styled.div`
   position: relative;
   width: 100%;
   display: flex;
+  padding: 2rem;
   @media (max-width: ${ScreenSize.SM_MAX}) {
     max-height: 350px;
     max-width: 350px;
-    padding-top: 5px;
+    padding: 5px 0 3px;
     margin: auto;
   }
 `;

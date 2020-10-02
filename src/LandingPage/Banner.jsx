@@ -34,29 +34,28 @@ const Text = styled.div`
     padding-left: 2rem;
     font-size: 2em;
     font-family: var(--sans-serif-font);
-
   }
-    @media (max-width: ${ScreenSize.MD_MIN}) {
-      top: 17%;
-      h1 {
-        font-size: 2.5em;
-      }
-      h2 {
-        font-size: 1.7em;
-        padding-left: 0.5rem;
-      }
+  @media (max-width: ${ScreenSize.MD_MIN}) {
+    top: 17%;
+    h1 {
+      font-size: 2.5em;
     }
+    h2 {
+      font-size: 1.7em;
+      padding-left: 0.5rem;
+    }
+  }
 `;
 
 const Banner = () => {
   return (
     <Container>
       <Image src={forsidebilde2} alt="forsidebilde" width={3440} height={1174} />
-        <Text>
-          <h2>Innredningsentreprenør</h2>
-          <h2>- Alt av fast inventar</h2>
-        </Text>
-      )}
+      <Text>
+        <h2>Innredningsentreprenør</h2>
+        <h2>- Alt av fast inventar</h2>
+      </Text>
+      )
     </Container>
   );
 };

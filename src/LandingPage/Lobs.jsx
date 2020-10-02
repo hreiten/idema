@@ -53,7 +53,7 @@ const Text = styled.div`
   @media (max-width: ${ScreenSize.MD_MAX}) {
     margin-top: 0;
     padding: 1rem;
-  };
+  } ;
 `;
 
 const Lobs = () => {
