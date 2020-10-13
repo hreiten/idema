@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ScreenSize } from '../shared/ScreenSize';
-import { useMedia } from '../helpers/useMedia';
 import forsidebilde2 from '../images/orangekjokken.jpg';
 
 const Container = styled.div`

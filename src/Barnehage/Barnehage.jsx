@@ -3,50 +3,56 @@ import styled from 'styled-components';
 
 import { useMedia } from '../helpers/useMedia';
 import { ScreenSize } from '../shared/ScreenSize';
-import ResponsiveImage from '../components/ResponsiveImage';
-import sykehusbilde1 from '../images/lhl-resepsjon.jpg';
+import barnehagebilde1 from '../images/barnehage1.jpg';
+import barnehagebilde2 from '../images/barnehage2.jpg';
+import barnehagebilde3 from '../images/barnehage3.jpg';
+import barnehagebilde4 from '../images/barnehage4.jpg';
 
 import Barnehageprodukter from './Barnehageprodukter';
 import Barnehageprosjekter from './Barnehageprosjekter';
 
 const Container = styled.div`
-  border-bottom: 1px solid grey;
   width: 100%;
   height: auto;
 `;
 
 const HeadingWrapper = styled.div`
   display: flex;
-  background-color: var(--idema-color);
   justify-content: space-between;
 `;
 
 const HeadingText = styled.div`
   padding: 1rem 1rem;
-  color: white;
-  width: 50%;
-  @media (max-width: ${ScreenSize.MD_MAX}) {
+  color: var(--idema-color);
+  width: 40%;
+  @media (max-width: ${ScreenSize.MD_MIN}) {
     width: 100%;
   } ;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   display: block;
-  padding: 2.5rem;
-  color: white;
+  padding: 2.5rem 1rem 0rem;
   font-family: var(--sans-serif-font);
 `;
 
 const Description = styled.p`
-  color: var(--text-color-light);
-  padding: 2rem;
+  padding: 0 1rem;
 `;
 
-const HeadingImage = styled.div`
+const HeadingImages = styled.div`
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Image = styled.img`
   width: 50%;
+  height: auto;
+  padding: 1rem;
 `;
 
-const Helse = () => {
+const Barnehage = () => {
   const isSmallScreen = useMedia(`(max-width: ${ScreenSize.MD_MAX})`);
 
   return (
@@ -54,14 +60,15 @@ const Helse = () => {
       <HeadingWrapper>
         <HeadingText>
           <Title>Barnehage</Title>
-          <Description>
-            Vi leverer alt av fast innreding til barnehager som feks lekerom, garderober ... se produktlisten under
-          </Description>
+          <Description>Inventar til barnehager</Description>
         </HeadingText>
         {!isSmallScreen && (
-          <HeadingImage>
-            <ResponsiveImage src={sykehusbilde1} alt="Sykehusbilde 1" witdh={800} height={400} />
-          </HeadingImage>
+          <HeadingImages>
+            <Image src={barnehagebilde1} alt="Sykehusbilde 1" />
+            <Image src={barnehagebilde2} alt="Sykehusbilde 1" />
+            <Image src={barnehagebilde3} alt="Sykehusbilde 2" />
+            <Image src={barnehagebilde4} alt="Sykehusbilde 3" />
+          </HeadingImages>
         )}
       </HeadingWrapper>
       <Barnehageprodukter />
@@ -70,4 +77,4 @@ const Helse = () => {
   );
 };
 
-export default Helse;
+export default Barnehage;

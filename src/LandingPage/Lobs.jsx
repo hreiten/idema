@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import LobImage from '../components/LobImage';
 import { ScreenSize } from '../shared/ScreenSize';
 import { RoutePaths } from '../Menu/Header';
-import romlhl from '../images/rom-lhl.jpg';
+import sykehusbygg from '../images/sykehusbygg.jpg';
 import vossvgs from '../images/voss-vgs.jpg';
 import barnehage from '../images/tBarnehage.jpg';
 import skate from '../images/skate.jpg';
 
 const Wrap = styled.div`
   display: flex;
-  margin: 10rem 4rem;
+  margin: 3rem;
   @media (max-width: ${ScreenSize.MD_MAX}) {
     flex-wrap: wrap;
     margin: 2rem 0;
@@ -18,7 +18,7 @@ const Wrap = styled.div`
 `;
 
 const Container = styled.div`
-  width: 50%;
+  width: 60%;
   @media (max-width: ${ScreenSize.MD_MAX}) {
     flex-direction: column;
     width: 100%;
@@ -29,7 +29,7 @@ const Text = styled.div`
   display: flex;
   align-self: center;
   text-align: right;
-  width: 50%;
+  width: 40%;
   padding: 10px;
   margin-right: 3rem;
 
@@ -63,7 +63,7 @@ const Lobs = () => {
         <h3>Vi leverer komplette innredninger til helse-, omsorgs- og undervisningssektoren samt næringsbygg.</h3>
       </Text>
       <Container>
-        <LobImage src={romlhl} alt="Link til facebookside - lhl" url={RoutePaths.HELSE} text="Helse og omsorg" />
+        <LobImage src={sykehusbygg} alt="Link til facebookside - lhl" url={RoutePaths.HELSE} text="Helse og omsorg" />
         <LobImage src={barnehage} alt="" url={RoutePaths.BARNEHAGE} text="Barnehager" />
       </Container>
       <Container>
