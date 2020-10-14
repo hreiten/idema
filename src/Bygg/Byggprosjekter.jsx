@@ -8,6 +8,15 @@ import theWell from '../images/theWellGarderobe.jpg';
 import fornebu from '../images/kjokkenFornebu.jpg';
 
 const Container = styled.div`
+  margin: 2rem 2rem 5rem;
+
+  h2 {
+    color: var(--idema-color);
+    font-family: var(--sans-serif-font);
+  }
+`;
+
+const LinkImages = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -19,14 +28,14 @@ const Container = styled.div`
 
 const Byggprosjekter = () => {
   return (
-    <>
+    <Container>
       <h2>Referanseprosjekter</h2>
       <i>*Kommer*</i>
       <p>
         Foreløpig kan du se bilder fra noen av våre prosjekter på vår{' '}
         <a href="https://www.facebook.com/idemaas">facebookside.</a>{' '}
       </p>
-      <Container>
+      <LinkImages>
         <LinkImage
           src={fornebu}
           alt=""
@@ -45,8 +54,8 @@ const Byggprosjekter = () => {
           url="https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=1329740403714435&ref=page_internal"
           text="F16 Akerbrygge"
         />
-      </Container>
-    </>
+      </LinkImages>
+    </Container>
   );
 };
 

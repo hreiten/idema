@@ -5,7 +5,6 @@ import React from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Header, { RoutePaths } from './Menu/Header';
-import Footer from './components/Footer';
 import LargeFooter from './components/LargeFooter';
 import Home from './LandingPage/Home';
 import Projects from './Projects/Projects';
