@@ -34,6 +34,15 @@ const Title = styled.h1`
   display: block;
   padding: 2.5rem 2.5rem 0rem;
   font-family: var(--sans-serif-font);
+
+  &:after {
+    content: '';
+    border-bottom: #ffa500 0.2rem solid;
+    position: relative;
+    display: block;
+    width: 4.25rem;
+    margin: 0 !important;
+  }
 `;
 
 const Description = styled.p`

@@ -7,6 +7,11 @@ const Container = styled.div`
   border-bottom: 1px solid var(--idema-color);
   padding: 2rem 2rem 5rem;
   padding-bottom: 4rem;
+
+  h2 {
+    color: var(--idema-color);
+    font-family: var(--sans-serif-font);
+  }
 `;
 
 const Grid = styled.div`

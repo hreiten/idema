@@ -4,7 +4,7 @@ import { ScreenSize } from '../shared/ScreenSize';
 import { Produktliste } from './produktliste';
 
 const Container = styled.div`
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--idema-color);
   margin: 2rem 2rem 5rem;
   padding-bottom: 4rem;
 
