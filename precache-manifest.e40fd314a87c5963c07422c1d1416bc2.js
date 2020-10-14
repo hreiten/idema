@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "40e6b80be4e0ab5c1287a525b60fe520",
+    "revision": "088d9d9bffafa6c5d47778a66100c24d",
     "url": "/idema/index.html"
   },
   {
-    "revision": "6e3ee6ba9f6692a48829",
+    "revision": "6e57635d1d28fa9afd7f",
     "url": "/idema/static/css/2.b7d328a2.chunk.css"
   },
   {
-    "revision": "6e3ee6ba9f6692a48829",
-    "url": "/idema/static/js/2.8fca8d4a.chunk.js"
+    "revision": "6e57635d1d28fa9afd7f",
+    "url": "/idema/static/js/2.43ca9c26.chunk.js"
   },
   {
     "revision": "c87550333da8df8ab4c80bd1d6e9defb",
-    "url": "/idema/static/js/2.8fca8d4a.chunk.js.LICENSE.txt"
+    "url": "/idema/static/js/2.43ca9c26.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b769db951fe5803c8640",
-    "url": "/idema/static/js/main.0cf9776f.chunk.js"
+    "revision": "7d3e2ce714030aace6d4",
+    "url": "/idema/static/js/main.27f282b4.chunk.js"
   },
   {
     "revision": "57d2e7c63bde28d1d184",
@@ -100,6 +100,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/idema/static/media/akerbrygge1.0df39911.jpg"
   },
   {
+    "revision": "9e54727a453a91d5c88f384e03288e05",
+    "url": "/idema/static/media/barnehage1.9e54727a.jpg"
+  },
+  {
+    "revision": "a07527a721299bef1212dbbf02929cbb",
+    "url": "/idema/static/media/barnehage2.a07527a7.jpg"
+  },
+  {
+    "revision": "d33a208557b6522f6d8dc9283a8ec075",
+    "url": "/idema/static/media/barnehage3.d33a2085.jpg"
+  },
+  {
+    "revision": "2322f7dc869bb958977c8a905a75a72d",
+    "url": "/idema/static/media/barnehage4.2322f7dc.jpg"
+  },
+  {
     "revision": "e4632710b213e533e9f156c6bfd8ef6f",
     "url": "/idema/static/media/bodoSykehus.e4632710.jpg"
   },
@@ -128,6 +144,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/idema/static/media/mfBarnehage.2fe81691.jpg"
   },
   {
+    "revision": "505acafbf5b0301fd874c14f95964e47",
+    "url": "/idema/static/media/nbygg1.505acafb.jpg"
+  },
+  {
+    "revision": "cfa8b6a6c9e62d420886ffd8beccfdc7",
+    "url": "/idema/static/media/nbygg2.cfa8b6a6.jpg"
+  },
+  {
+    "revision": "5a002d96d71611e691948e66a2b97a47",
+    "url": "/idema/static/media/nbygg3.5a002d96.jpg"
+  },
+  {
+    "revision": "763ece3ccb182fe2259f0cca022879f8",
+    "url": "/idema/static/media/nbygg5.763ece3c.jpg"
+  },
+  {
     "revision": "60e692948bb38963ff93eb74ee7f2499",
     "url": "/idema/static/media/omOss.60e69294.jpg"
   },
@@ -144,8 +176,48 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/idema/static/media/rom-lhl.c57be398.jpg"
   },
   {
+    "revision": "d62e011d90996fdb25f115784890dcc8",
+    "url": "/idema/static/media/skapValle.d62e011d.jpg"
+  },
+  {
     "revision": "f288514426c28b0c38dac3c82a807ce2",
     "url": "/idema/static/media/skate.f2885144.jpg"
+  },
+  {
+    "revision": "742a7d481d78c434f2da10d59afc67bf",
+    "url": "/idema/static/media/skole2.742a7d48.jpg"
+  },
+  {
+    "revision": "7023784a40484c5374d03acd1e17833c",
+    "url": "/idema/static/media/skole3.7023784a.jpg"
+  },
+  {
+    "revision": "3dae18f8cb9161895a172b774c56e1d7",
+    "url": "/idema/static/media/skole4.3dae18f8.jpg"
+  },
+  {
+    "revision": "859bd31939a8604f41705c765c03a413",
+    "url": "/idema/static/media/sykehus1.859bd319.jpg"
+  },
+  {
+    "revision": "6d1b7545fd4c7132a8427749f2c38415",
+    "url": "/idema/static/media/sykehus2.6d1b7545.jpg"
+  },
+  {
+    "revision": "5fcfa84137d6d8b82a840fe516d00d25",
+    "url": "/idema/static/media/sykehus4.5fcfa841.jpg"
+  },
+  {
+    "revision": "770f91cb497938a7c6cf27182434018b",
+    "url": "/idema/static/media/sykehusbygg.770f91cb.jpg"
+  },
+  {
+    "revision": "e81690245b85212597b5551dbdd6362b",
+    "url": "/idema/static/media/sykehushyller.e8169024.jpg"
+  },
+  {
+    "revision": "a2d1274d7f87fb769d91e7ad468fd344",
+    "url": "/idema/static/media/sykehusvegg.a2d1274d.jpg"
   },
   {
     "revision": "a7e45d1c5945371e5ee52d2e764b616e",
