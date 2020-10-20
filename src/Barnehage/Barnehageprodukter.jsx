@@ -7,6 +7,9 @@ const Container = styled.div`
   border-bottom: 1px solid grey;
   margin: 2rem 2rem 5rem;
   padding-bottom: 4rem;
+  @media (max-width: ${ScreenSize.MD_MIN}) {
+    margin: 1rem 1rem 3rem;
+  } ;
 
   h2 {
     color: var(--idema-color);

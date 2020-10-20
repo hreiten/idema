@@ -13,9 +13,15 @@ const NavItem = styled(Link)`
   position: relative;
 
   .active {
-    border-color: hsl(230, 38%, 46%);
+    border-color: grey;
     border-width: 2px;
+    width: 4.5px;
   }
+`;
+
+const Item = styled.span`
+  padding: 10px 16px;
+  position: relative;
 `;
 
 const DropdownList = styled.ul`
@@ -54,8 +60,8 @@ const NavBar = ({ dropdownMenuItems, menuItems }) => {
 
   return (
     <Nav>
-      <NavItem to={RoutePaths.LANDING}>Hjem</NavItem>
-      <NavItem onMouseOver={() => setListIsOpen(true)} onMouseLeave={() => setListIsOpen(false)}>
+      <NavItem to={RoutePaths.LANDING} replace >Hjem</NavItem>
+      <Item onMouseOver={() => setListIsOpen(true)} onMouseLeave={() => setListIsOpen(false)}>
         Forretningsområder
         {listIsOpen && (
           <Dropdown
@@ -64,9 +70,9 @@ const NavBar = ({ dropdownMenuItems, menuItems }) => {
             items={dropdownMenuItems}
           />
         )}
-      </NavItem>
-      <NavItem to={RoutePaths.ABOUT}>Om oss</NavItem>
-      <NavItem to={RoutePaths.CONTACT}>Kontakt Oss</NavItem>
+      </Item>
+      <NavItem to={RoutePaths.ABOUT} replace>Om oss</NavItem>
+      <NavItem to={RoutePaths.CONTACT} replace>Kontakt Oss</NavItem>
     </Nav>
   );
 };

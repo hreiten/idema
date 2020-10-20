@@ -63,6 +63,7 @@ const LargeFooter = () => {
         <MobileWrapper>
           <p>IDEMA As</p>
           <p>post@idema.no</p>
+          <p>67 51 69 00</p>
           <a href="https://www.google.com/maps/place/Nesveien+13,+1344+Haslum/@59.9164783,10.5532062,17z/data=!3m1!4b1!4m5!3m4!1s0x4641132ffed89cfd:0xe6b95102e078aa7a!8m2!3d59.9164783!4d10.5554002">
             Nesveien 13 1344 Haslum
           </a>

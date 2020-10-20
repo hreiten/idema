@@ -24,9 +24,7 @@ const RootContainer = styled.div`
 `;
 
 const MobileContainer = styled.div`
-  background-color: var(--idema-color);
   position: relative;
-  
 `;
 
 const Text = styled.div`

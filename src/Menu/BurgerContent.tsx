@@ -68,7 +68,7 @@ export const Navigation = ({ toggle, menuItems }: { toggle: () => void; menuItem
   <MenuList variants={menuItemsContainerVariants}>
     {menuItems.map((item, i) => (
       <ListItem variants={menuItemsVariants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} key={i}>
-        <TextPlaceholder to={item.path} onClick={() => toggle()}>
+        <TextPlaceholder to={item.path} replace onClick={() => toggle()}>
           {item.title}
         </TextPlaceholder>
       </ListItem>

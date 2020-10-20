@@ -13,7 +13,7 @@ const Wrap = styled.div`
   margin: 3rem;
   @media (max-width: ${ScreenSize.MD_MAX}) {
     flex-wrap: wrap;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 `;
 
@@ -34,11 +34,10 @@ const Text = styled.div`
   margin-right: 3rem;
 
   h3 {
-    color: white;
+    color: var(--idema-color);
     font-family: var(--sans-serif-font);
     @media (min-width: ${ScreenSize.SM_MAX}) {
       font-size: 25px;
-      color: var(--idema-color);
     }
   }
 

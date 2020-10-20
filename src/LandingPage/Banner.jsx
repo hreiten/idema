@@ -23,17 +23,12 @@ const Text = styled.div`
   color: #fff;
   width: 60%;
 
-  h2 {
-    font-size: 4em;
+  h1 {
     line-height: 1;
     font-family: var(--sans-serif-font);
+    padding-left: 2rem;
   }
 
-  h2 {
-    padding-left: 2rem;
-    font-size: 2em;
-    font-family: var(--sans-serif-font);
-  }
   @media (max-width: ${ScreenSize.MD_MIN}) {
     top: 17%;
     h1 {
@@ -51,10 +46,9 @@ const Banner = () => {
     <Container>
       <Image src={forsidebilde2} alt="forsidebilde" width={3440} height={1174} />
       <Text>
-        <h2>Innredningsentreprenør</h2>
-        <h2>- Alt av fast inventar</h2>
+        <h1>Innredningsentreprenør</h1>
+        <h1>- Alt av fast inventar</h1>
       </Text>
-      )
     </Container>
   );
 };

@@ -35,6 +35,11 @@ const Title = styled.h1`
   display: block;
   padding: 2.5rem 1rem 0rem;
   font-family: var(--sans-serif-font);
+ 
+  @media (max-width: ${ScreenSize.MD_MIN}) {
+    width: 100%;
+    padding: 0rem;
+  } ;
 
   &:after {
     content: '';
@@ -48,12 +53,16 @@ const Title = styled.h1`
 
 const Description = styled.p`
   padding: 0 1rem;
+  @media (max-width: ${ScreenSize.MD_MIN}) {
+    padding: 0;
+  } ;
 `;
 
 const HeadingImages = styled.div`
   width: 60%;
   display: flex;
   flex-wrap: wrap;
+  padding-right: 3rem; 
 `;
 
 const Image = styled.img`
@@ -70,7 +79,7 @@ const Helse = () => {
       <HeadingWrapper>
         <HeadingText>
           <Title>Helse og omsorg</Title>
-          <Description>Sykehus, sykehjem og andre omsorgshjem</Description>
+          <Description>Sykehus, sykehjem, pleiehjem og andre omsorgsboliger</Description>
         </HeadingText>
         {!isSmallScreen && (
           <HeadingImages>
