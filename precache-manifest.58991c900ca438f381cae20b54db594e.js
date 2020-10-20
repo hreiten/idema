@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99354911a4efe956d01912477699cadc",
+    "revision": "08307396f87a4c773b49dec8b26e1e90",
     "url": "/idema/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/idema/static/js/2.43ca9c26.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "251db01f58325e0c3637",
-    "url": "/idema/static/js/main.1f8a5c6b.chunk.js"
+    "revision": "14d6248eb61d2978bf5c",
+    "url": "/idema/static/js/main.13013c77.chunk.js"
   },
   {
     "revision": "57d2e7c63bde28d1d184",
