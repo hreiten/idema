@@ -8,16 +8,16 @@ import BurgerMenu from './BurgerMenu';
 import NavBar from './NavBar';
 
 export const RoutePaths = {
-  PRODUCTS: process.env.PUBLIC_URL + '/produkter',
-  PROJECTS: process.env.PUBLIC_URL + '/prosjekter',
-  CONTACT: process.env.PUBLIC_URL + '/kontakt',
-  BUSINESS_AREAS: process.env.PUBLIC_URL + '/forretningsområder',
-  ABOUT: process.env.PUBLIC_URL + '/om',
-  LANDING: process.env.PUBLIC_URL + '/',
-  HELSE: process.env.PUBLIC_URL + '/helse',
-  SKOLE: process.env.PUBLIC_URL + '/undervisning',
-  BARNEHAGE: process.env.PUBLIC_URL + '/barnehager',
-  BYGG: process.env.PUBLIC_URL + '/naeringsbygg',
+  PRODUCTS: '/produkter',
+  PROJECTS: '/prosjekter',
+  CONTACT: '/kontakt',
+  BUSINESS_AREAS: '/forretningsområder',
+  ABOUT: '/om',
+  LANDING: '/',
+  HELSE: '/helse',
+  SKOLE: '/undervisning',
+  BARNEHAGE: '/barnehager',
+  BYGG: '/naeringsbygg',
 };
 
 const menuItems = [

@@ -3,7 +3,7 @@ import '@bekk/storybook/build/lib/fonts/webfonts.css';
 
 import React from 'react';
 import styled  from 'styled-components';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Header, { RoutePaths } from './Menu/Header';
 import LargeFooter from './components/LargeFooter';
@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 
 const App = () => (
   <div className="main-wrapper">
-    <Router >
+    <Router>
       <Header />
       <ScrollToTop />
       
