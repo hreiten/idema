@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/idema/static/js/main.9e59b97a.chunk.js",
+    "main.js": "/idema/static/js/main.e16f83bd.chunk.js",
     "runtime-main.js": "/idema/static/js/runtime-main.f6ae7148.js",
     "static/css/2.b7d328a2.chunk.css": "/idema/static/css/2.b7d328a2.chunk.css",
-    "static/js/2.97f54efc.chunk.js": "/idema/static/js/2.97f54efc.chunk.js",
+    "static/js/2.8d55b43a.chunk.js": "/idema/static/js/2.8d55b43a.chunk.js",
     "index.html": "/idema/index.html",
-    "precache-manifest.e263e2ae9761f4c111b17baa0c5d767a.js": "/idema/precache-manifest.e263e2ae9761f4c111b17baa0c5d767a.js",
+    "precache-manifest.75978ef48464075cf159f73acd23f13f.js": "/idema/precache-manifest.75978ef48464075cf159f73acd23f13f.js",
     "service-worker.js": "/idema/service-worker.js",
-    "static/js/2.97f54efc.chunk.js.LICENSE.txt": "/idema/static/js/2.97f54efc.chunk.js.LICENSE.txt",
+    "static/js/2.8d55b43a.chunk.js.LICENSE.txt": "/idema/static/js/2.8d55b43a.chunk.js.LICENSE.txt",
     "static/media/webfonts.css": "/idema/static/media/e0df2bb1-32d4-4f28-a889-9e712e9e5032.a161abd6.eot",
     "static/media/IDEMALOGO.jpg": "/idema/static/media/IDEMALOGO.4d27645e.jpg",
     "static/media/akerbrygge1.jpg": "/idema/static/media/akerbrygge1.0df39911.jpg",
@@ -49,7 +49,7 @@
   "entrypoints": [
     "static/js/runtime-main.f6ae7148.js",
     "static/css/2.b7d328a2.chunk.css",
-    "static/js/2.97f54efc.chunk.js",
-    "static/js/main.9e59b97a.chunk.js"
+    "static/js/2.8d55b43a.chunk.js",
+    "static/js/main.e16f83bd.chunk.js"
   ]
 }
