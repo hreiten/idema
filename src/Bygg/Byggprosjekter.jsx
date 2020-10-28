@@ -42,7 +42,7 @@ const Byggprosjekter = () => {
     <Container>
       <h2>Referanseprosjekter</h2>
       <p>
-      Se bilder noen av våre gjennomførte prosjekter på vår{' '}
+      Se bilder fra noen av våre gjennomførte prosjekter på vår{' '}
         <a href="https://www.facebook.com/idemaas/photos/?tab=album&ref=page_internal">facebookside</a>{' '}
         <FaceIcon>
           <a href="https://www.facebook.com/idemaas/photos/?tab=album&ref=page_internal">

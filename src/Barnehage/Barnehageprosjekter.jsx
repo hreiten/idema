@@ -41,7 +41,7 @@ const Barnehageprosjekter = () => {
     <Container>
       <h2>Referanseprosjekter</h2>
       <p>
-      Se bilder noen av våre gjennomførte prosjekter på vår{' '}
+      Se bilder fra noen av våre gjennomførte prosjekter på vår{' '}
         <a href="https://www.facebook.com/idemaas">facebookside.</a>{' '}
      
       <FaceIcon>
