@@ -32,19 +32,18 @@ const MobileContainer = styled.div`
 
 const BannerText = styled.div`
   position: absolute;
-  top: 120px;;
+  top: 130px;;
   left: 20px;
   
   h2 {
     color: white;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 2em;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.5em;
     text-transform: uppercase;
   }
 `;
 
 const InfoText = styled.div`
-  //background-color:var(--idema-color);
   padding: 1rem 5%;
   text-align: center;
   p{
@@ -56,7 +55,6 @@ const InfoText = styled.div`
 const Text = styled.div`
   padding: 2rem 15rem 0;
   text-align: center;
- // background-color: whitesmoke;
 
   h2 {
     font-family: 'Libre Franklin', sans-serif;
