@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ca793d66699006732539f13c2b5f514",
+    "revision": "ec2d9ab5ff3f5a00c165cf07d37a96bb",
     "url": "/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.5154141d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "716e9997cabfe46aa7e2",
-    "url": "/static/js/main.f927d2be.chunk.js"
+    "revision": "54c0f50bb3e522291444",
+    "url": "/static/js/main.91ed2867.chunk.js"
   },
   {
     "revision": "2afe0c77fab43d6c5751",
@@ -84,6 +84,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/IDEMALOGO.4d27645e.jpg"
   },
   {
+    "revision": "c3041a72eedaf8dd3f40d04192e626a5",
+    "url": "/static/media/Lhl-vindu.c3041a72.jpg"
+  },
+  {
     "revision": "16c5475ac8a470cb61d21c4fd4ffe64f",
     "url": "/static/media/NewzaldWeb-Book.16c5475a.woff"
   },
@@ -138,6 +142,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "18d7186c2cbe648bcf2d97a5b3545301",
     "url": "/static/media/lhl-resepsjon.18d7186c.jpg"
+  },
+  {
+    "revision": "7f0c43194f0deff4036ead39d9448844",
+    "url": "/static/media/lhlresep.7f0c4319.jpg"
   },
   {
     "revision": "2fe816912438821e748cdb4e759861f3",
@@ -200,10 +208,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sykehus1.859bd319.jpg"
   },
   {
-    "revision": "6d1b7545fd4c7132a8427749f2c38415",
-    "url": "/static/media/sykehus2.6d1b7545.jpg"
-  },
-  {
     "revision": "5fcfa84137d6d8b82a840fe516d00d25",
     "url": "/static/media/sykehus4.5fcfa841.jpg"
   },
@@ -214,10 +218,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "770f91cb497938a7c6cf27182434018b",
     "url": "/static/media/sykehusbygg.770f91cb.jpg"
-  },
-  {
-    "revision": "a2d1274d7f87fb769d91e7ad468fd344",
-    "url": "/static/media/sykehusvegg.a2d1274d.jpg"
   },
   {
     "revision": "a7e45d1c5945371e5ee52d2e764b616e",
