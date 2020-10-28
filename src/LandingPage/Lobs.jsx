@@ -10,57 +10,24 @@ import skate from '../images/skate.jpg';
 
 const Wrap = styled.div`
   display: flex;
-  margin: 3rem;
+  margin: 1rem 0;
   @media (max-width: ${ScreenSize.MD_MAX}) {
     flex-wrap: wrap;
-    margin: 1rem 0;
+    margin:  0;
   }
 `;
 
 const Container = styled.div`
-  width: 60%;
+  width: 100%;
   @media (max-width: ${ScreenSize.MD_MAX}) {
     flex-direction: column;
     width: 100%;
   } ;
 `;
 
-const Text = styled.div`
-  display: flex;
-  align-self: center;
-  text-align: right;
-  width: 40%;
-  padding: 10px;
-  margin-right: 3rem;
-
-  h3 {
-    color: var(--idema-color);
-    font-family: var(--sans-serif-font);
-    @media (min-width: ${ScreenSize.SM_MAX}) {
-      font-size: 25px;
-    }
-  }
-
-  @media (max-width: ${ScreenSize.MD_MAX}) {
-    text-align: center;
-    width: 100%;
-    margin-right: 0;
-    margin-top: 6rem;
-    padding: 2.5rem 1rem;
-  }
-
-  @media (max-width: ${ScreenSize.MD_MAX}) {
-    margin-top: 0;
-    padding: 1rem;
-  } ;
-`;
-
 const Lobs = () => {
   return (
     <Wrap>
-      <Text>
-        <h3>Vi leverer komplette innredninger til helse-, omsorgs- og undervisningssektoren samt næringsbygg.</h3>
-      </Text>
       <Container>
         <LobImage src={sykehusbygg} alt="Link til facebookside - lhl" url={RoutePaths.HELSE} text="Helse og omsorg" />
         <LobImage src={barnehage} alt="" url={RoutePaths.BARNEHAGE} text="Barnehager" />

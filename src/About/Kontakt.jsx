@@ -21,8 +21,9 @@ const Header = styled.div`
     padding: 1rem;
   }
 
-  h2 {
-    font-family: var(--sans-serif-font);
+  h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
   }
 `;
 
@@ -41,6 +42,7 @@ const Card = styled.div`
 
   p {
     line-height: 1.4rem;
+    font-family: 'Work Sans', sans-serif;
   }
 
   @media (max-width: ${ScreenSize.SM_MAX}) {
@@ -53,8 +55,8 @@ const Kontakt = () => {
   return (
     <Container>
       <Header>
-        <h2>Kontakt IDEMA AS</h2>
-        <h5>67 51 69 00 | post@idema.no</h5>
+        <h2>IDEMA AS</h2>
+        <h5>67 51 69 00 {' '} post@idema.no</h5>
         <a href="https://www.google.com/maps/place/Nesveien+13,+1344+Haslum/@59.9164783,10.5532062,17z/data=!3m1!4b1!4m5!3m4!1s0x4641132ffed89cfd:0xe6b95102e078aa7a!8m2!3d59.9164783!4d10.5554002">
           Nesveien 13 1344 Haslum
         </a>

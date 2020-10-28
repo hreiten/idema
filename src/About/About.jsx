@@ -35,8 +35,6 @@ const TextWrapper = styled.div`
   }
 
   h1 {
-    font-family: var(--sans-serif-font);
-
     &:after {
       content: '';
       border-bottom: #f5c26b 0.2rem solid;

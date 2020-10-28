@@ -24,19 +24,16 @@ const Text = styled.div`
   width: 60%;
 
   h1 {
-    line-height: 1;
-    font-family: var(--sans-serif-font);
-    padding-left: 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-left: 2.5rem;
+    text-transform: uppercase;
+    font-size: 3.8em;
   }
 
-  @media (max-width: ${ScreenSize.MD_MIN}) {
-    top: 17%;
+  @media (max-width: ${ScreenSize.LG_MID}) {
+    top: 10%;
     h1 {
       font-size: 2.5em;
-    }
-    h2 {
-      font-size: 1.7em;
-      padding-left: 0.5rem;
     }
   }
 `;
@@ -47,7 +44,6 @@ const Banner = () => {
       <Image src={forsidebilde2} alt="forsidebilde" width={3440} height={1174} />
       <Text>
         <h1>Innredningsentreprenør</h1>
-        <h1>- Alt av fast inventar</h1>
       </Text>
     </Container>
   );

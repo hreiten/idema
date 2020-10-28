@@ -17,6 +17,7 @@ const Image = styled.img`
   display: block;
   width: 100%;
   height: auto;
+  align-self: flex-start; 
   transition: 0.5s ease;
   backface-visibility: hidden;
   padding: 0.5px;

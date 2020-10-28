@@ -37,8 +37,9 @@
     "react": "^16.13.1",
     "react-burger-menu": "^2.7.1",
     "react-dom": "^16.13.1",
+    "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^3.4.4",
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.2.0",
     "styled-icons": "^10.21.0"

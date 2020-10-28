@@ -22,6 +22,7 @@ const Image = styled.img`
   display: block;
   width: 100%;
   height: auto;
+  align-self: flex-start; 
   transition: 0.5s ease;
   backface-visibility: hidden;
   padding: 0.5px;
@@ -56,7 +57,7 @@ const Middle = styled.div`
 const Text = styled(Link)`
   color: white;
   opacity: 1;
-  font-size: 16px;
+  font-size: 25px;
   padding: 16px 32px;
   min-width: 80%;
   align-self: center;

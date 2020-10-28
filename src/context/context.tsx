@@ -4,10 +4,10 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
     :root {
         --sans-serif-font: FFDINWebProLight, 'Calibre Light', sans-serif;
-        --sans-serif-italic: DINW01LightItalic, Georgia, serif,
+        --sans-serif-italic: DINW01LightItalic, 'Georgia', sans-serif;
         --sans-serif-extra-bold: DINW01Medium;
         --sans-serif-bold: DINW01Regular;
-        --serif-font: NewzaldBook, Georgia, serif;
+        --serif-font: NewzaldBook, 'Georgia', sans-serif;
         --easing: cubic-bezier(0.77, 0.3, 0.39, 0.9);
 
         --font-size-s: 20px; 
@@ -43,7 +43,11 @@ const GlobalStyles = createGlobalStyle`
     h1,
     h2,
     h3 {
-        font-family: var(--serif-font), Georgia, serif;
+        font-family: var(--sans-serif-font), 'Fira Sans Condensed', sans-serif;
+    }
+
+    h6 {
+        font-family: var(--italiana-font), 'Calibre Light';
     }
 
     p,

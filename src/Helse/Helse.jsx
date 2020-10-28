@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { useMedia } from '../helpers/useMedia';
 import { ScreenSize } from '../shared/ScreenSize';
 
-import sykehusbilde4 from '../images/sykehushyller.jpg';
 import sykehusbilde1 from '../images/sykehus1.jpg';
 import sykehusbilde2 from '../images/sykehus2.jpg';
 import sykehusbilde3 from '../images/sykehus4.jpg';
@@ -35,7 +34,6 @@ const HeadingText = styled.div`
 const Title = styled.h1`
   display: block;
   padding: 2.5rem 1rem 0rem;
-  
   font-size: 4.5em;
   line-height: 1.5em;
  
