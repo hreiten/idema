@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.615394e5.chunk.js",
+    "main.js": "/static/js/main.fbdc103d.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.7b0e7bb8.js",
     "static/css/2.7157e428.chunk.css": "/static/css/2.7157e428.chunk.css",
-    "static/js/2.6ab3db72.chunk.js": "/static/js/2.6ab3db72.chunk.js",
+    "static/js/2.8483e10b.chunk.js": "/static/js/2.8483e10b.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.dd40c90593af9e865fec5d9b5deaad65.js": "/precache-manifest.dd40c90593af9e865fec5d9b5deaad65.js",
+    "precache-manifest.15767f6c85867313af3f2b6fe4d9d6d3.js": "/precache-manifest.15767f6c85867313af3f2b6fe4d9d6d3.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.6ab3db72.chunk.js.LICENSE.txt": "/static/js/2.6ab3db72.chunk.js.LICENSE.txt",
+    "static/js/2.8483e10b.chunk.js.LICENSE.txt": "/static/js/2.8483e10b.chunk.js.LICENSE.txt",
     "static/media/webfonts.css": "/static/media/e0df2bb1-32d4-4f28-a889-9e712e9e5032.a161abd6.eot",
     "static/media/IDEMALOGO.jpg": "/static/media/IDEMALOGO.4d27645e.jpg",
     "static/media/akerbrygge1.jpg": "/static/media/akerbrygge1.0df39911.jpg",
@@ -49,7 +49,7 @@
   "entrypoints": [
     "static/js/runtime-main.7b0e7bb8.js",
     "static/css/2.7157e428.chunk.css",
-    "static/js/2.6ab3db72.chunk.js",
-    "static/js/main.615394e5.chunk.js"
+    "static/js/2.8483e10b.chunk.js",
+    "static/js/main.fbdc103d.chunk.js"
   ]
 }
