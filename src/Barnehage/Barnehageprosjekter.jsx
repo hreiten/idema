@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Facebook } from '@styled-icons/entypo-social/Facebook';
 import LinkImage from '../components/LinkImage';
 import { ScreenSize } from '../shared/ScreenSize';
 
@@ -19,6 +20,12 @@ const Container = styled.div`
   }
 `;
 
+const FaceIcon = styled.span`
+  a {
+    color: var(--idema-color);
+  }
+`;
+
 const LinkImages = styled.div`
   display: flex;
   justify-content: space-between;
@@ -33,11 +40,16 @@ const Barnehageprosjekter = () => {
   return (
     <Container>
       <h2>Referanseprosjekter</h2>
-      <i>*Kommer*</i>
       <p>
-        Foreløpig kan du se bilder fra noen av våre prosjekter på vår{' '}
+      Se bilder noen av våre gjennomførte prosjekter på vår{' '}
         <a href="https://www.facebook.com/idemaas">facebookside.</a>{' '}
-      </p>
+     
+      <FaceIcon>
+          <a href="https://www.facebook.com/idemaas/photos/?tab=album&ref=page_internal">
+          <Facebook size="28" />
+        </a>
+        </FaceIcon>
+        </p>
       <LinkImages>
         <LinkImage
           src={barnehage1}

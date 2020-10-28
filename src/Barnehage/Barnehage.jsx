@@ -33,9 +33,13 @@ const HeadingText = styled.div`
 const Title = styled.h1`
   display: block;
   padding: 2.5rem 1rem 0rem;
-  font-family: var(--sans-serif-font);
-  @media (max-width: ${ScreenSize.MD_MIN}) {
+  font-size: 4em;
+  line-height: 1.5em;
+
+  @media (max-width: ${ScreenSize.LG_MID}) {
     padding: 0;
+    font-size: 2.5em;
+    line-height: 1.5em;
   } ;
 
   &:after {
@@ -65,6 +69,7 @@ const HeadingImages = styled.div`
 const Image = styled.img`
   width: 50%;
   height: auto;
+  align-self: flex-start; 
   padding: 1rem;
 `;
 
@@ -76,7 +81,7 @@ const Barnehage = () => {
       <HeadingWrapper>
         <HeadingText>
           <Title>Barnehage</Title>
-          <Description>Inventar til barnehager</Description>
+          <Description>Alt av fast innventar, spesial og standard.</Description>
         </HeadingText>
         {!isSmallScreen && (
           <HeadingImages>

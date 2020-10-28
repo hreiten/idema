@@ -33,9 +33,14 @@ const HeadingText = styled.div`
 const Title = styled.h1`
   display: block;
   padding: 2.5rem 2.5rem 0rem;
-  font-family: var(--sans-serif-font);
-  @media (max-width: ${ScreenSize.MD_MIN}) {
+  
+  font-size: 4em;
+  line-height: 1.5em;
+
+  @media (max-width: ${ScreenSize.LG_MID}) {
     padding: 0;
+    font-size: 2.5em;
+    line-height: 1.5em;
   } ;
 
   &:after {
@@ -50,7 +55,7 @@ const Title = styled.h1`
 
 const Description = styled.p`
   padding: 0 2.5rem;
-  @media (max-width: ${ScreenSize.MD_MIN}) {
+  @media (max-width: ${ScreenSize.LG_MID}) {
     padding: 0;
   } ;
 `;
@@ -65,6 +70,7 @@ const HeadingImages = styled.div`
 const Image = styled.img`
   width: 50%;
   height: auto;
+  align-self: flex-start; 
   padding: 1rem;
 `;
 
@@ -76,7 +82,7 @@ const Skole = () => {
       <HeadingWrapper>
         <HeadingText>
           <Title>Undervisning</Title>
-          <Description>Vi leverer til alle typer undervisningsbygg.</Description>
+          <Description>All fast innredning til grunnskole, videregående og universitet.</Description>
         </HeadingText>
         {!isSmallScreen && (
           <HeadingImages>

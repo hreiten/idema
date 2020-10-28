@@ -8,6 +8,7 @@ import sykehusbilde4 from '../images/sykehushyller.jpg';
 import sykehusbilde1 from '../images/sykehus1.jpg';
 import sykehusbilde2 from '../images/sykehus2.jpg';
 import sykehusbilde3 from '../images/sykehus4.jpg';
+import sykehusbilde6 from '../images/sykehus6.jpg';
 
 import SykehusProdukter from './SykehusProdukter';
 import SykehusProsjekter from './SykehusProsjekter';
@@ -34,7 +35,9 @@ const HeadingText = styled.div`
 const Title = styled.h1`
   display: block;
   padding: 2.5rem 1rem 0rem;
-  font-family: var(--sans-serif-font);
+  
+  font-size: 4.5em;
+  line-height: 1.5em;
  
   @media (max-width: ${ScreenSize.MD_MIN}) {
     width: 100%;
@@ -68,6 +71,7 @@ const HeadingImages = styled.div`
 const Image = styled.img`
   width: 50%;
   height: auto;
+  align-self: flex-start; 
   padding: 1rem;
 `;
 
@@ -79,14 +83,14 @@ const Helse = () => {
       <HeadingWrapper>
         <HeadingText>
           <Title>Helse og omsorg</Title>
-          <Description>Sykehus, sykehjem, pleiehjem og andre omsorgsboliger</Description>
+          <Description>All fast innredninig til sykehus og sykehjem.</Description>
         </HeadingText>
         {!isSmallScreen && (
           <HeadingImages>
-            <Image src={sykehusbilde4} alt="Sykehusbilde 1" />
-            <Image src={sykehusbilde2} alt="Sykehusbilde 1" />
+            <Image src={sykehusbilde3} alt="Sykehusbilde 1" />
+            <Image src={sykehusbilde6} alt="Sykehusbilde 1" />
             <Image src={sykehusbilde1} alt="Sykehusbilde 2" />
-            <Image src={sykehusbilde3} alt="Sykehusbilde 3" />
+            <Image src={sykehusbilde2} alt="Sykehusbilde 3" />
           </HeadingImages>
         )}
       </HeadingWrapper>
