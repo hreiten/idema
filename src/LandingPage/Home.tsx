@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+
 import { useMedia } from '../helpers/useMedia';
 import { ScreenSize } from '../shared/ScreenSize';
+import { RoutePaths } from '../Menu/Header';
 import ResponsiveImage from '../components/ResponsiveImage';
 import Banner from './Banner';
 import MobilImg from '../images/lhl-resepsjon.jpg';
@@ -99,7 +102,7 @@ const Home = () => {
         <Lobs />
       </RootContainer>
       <InfoText>
-        <p>For spørsmål informasjon eller råd, ta kontakt med oss!</p>
+        <p>For spørsmål informasjon eller råd, <Link to={RoutePaths.CONTACT} > ta kontakt med oss! </Link></p>
       </InfoText>
     </>
   );

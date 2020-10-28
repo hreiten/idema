@@ -5,7 +5,7 @@ import LinkImage from '../components/LinkImage';
 import { ScreenSize } from '../shared/ScreenSize';
 
 import bodoSykehus from '../images/bodoSykehus.jpg';
-import lhlsykehus from '../images/sykehusvegg.jpg';
+import lhlsykehus from '../images/Lhl-vindu.jpg';
 import ulriksdalsykehus from '../images/ulriksdalSykehus.jpg';
 
 const Container = styled.div`

@@ -5,7 +5,7 @@ import { useMedia } from '../helpers/useMedia';
 import { ScreenSize } from '../shared/ScreenSize';
 
 import sykehusbilde1 from '../images/sykehus1.jpg';
-import sykehusbilde2 from '../images/sykehus2.jpg';
+import sykehusbilde2 from '../images/lhlresep.jpg';
 import sykehusbilde3 from '../images/sykehus4.jpg';
 import sykehusbilde6 from '../images/sykehus6.jpg';
 
@@ -37,9 +37,10 @@ const Title = styled.h1`
   font-size: 4.5em;
   line-height: 1.5em;
  
-  @media (max-width: ${ScreenSize.MD_MIN}) {
-    width: 100%;
-    padding: 0rem;
+  @media (max-width: ${ScreenSize.LG_MID}) {
+    padding: 0;
+    font-size: 2.5em;
+    line-height: 1.5em;
   } ;
 
   &:after {
@@ -85,10 +86,10 @@ const Helse = () => {
         </HeadingText>
         {!isSmallScreen && (
           <HeadingImages>
-            <Image src={sykehusbilde3} alt="Sykehusbilde 1" />
+            <Image src={sykehusbilde2} alt="Sykehusbilde 1" />
             <Image src={sykehusbilde6} alt="Sykehusbilde 1" />
-            <Image src={sykehusbilde1} alt="Sykehusbilde 2" />
-            <Image src={sykehusbilde2} alt="Sykehusbilde 3" />
+            <Image src={sykehusbilde3} alt="Sykehusbilde 2" />
+            <Image src={sykehusbilde1} alt="Sykehusbilde 3" />
           </HeadingImages>
         )}
       </HeadingWrapper>
