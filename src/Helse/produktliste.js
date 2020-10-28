@@ -17,7 +17,7 @@ export const Produktliste = [
   },
   {
     id: 5,
-    title: 'Isolatrom',
+    title: 'Isolater',
   },
   {
     id: 6,
@@ -44,6 +44,10 @@ export const Produktliste = [
     title: 'Avtreksskap',
   },
   {
+    id: 30,
+    title: 'Toalett- og dusjskillevegger'
+  },
+  {
     id: 12,
     title: 'Infusjonsskinner og -oppheng',
   },
@@ -65,7 +69,7 @@ export const Produktliste = [
   },
   {
     id: 17,
-    title: 'Blending- og skjermingssystemer for vindu',
+    title: 'Blending- og skjermingssystemer',
   },
   {
     id: 18,
@@ -73,7 +77,7 @@ export const Produktliste = [
   },
   {
     id: 19,
-    title: 'Spesialløsninger for oppheng av medisinskutstyr',
+    title: 'Spesialløsninger for oppheng av medisinsk utstyr',
   },
   {
     id: 20,
