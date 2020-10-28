@@ -2,3 +2,13 @@
   font-family: DINOTMedium;
   src: url('DINOT-Medium.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: WebServerOff;
+  src: url('Web_Serveroff.otf') format('truetype');
+}
+
+@font-face {
+  font-family: ItalianaRegular;
+  src: url('italiana-regular.otf') format('truetype');
+}
