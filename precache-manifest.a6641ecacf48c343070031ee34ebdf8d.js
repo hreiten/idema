@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "631ec3dbadfcc34e6112876603132243",
+    "revision": "3ca793d66699006732539f13c2b5f514",
     "url": "/index.html"
   },
   {
-    "revision": "87bd680e8d9edafe1a01",
+    "revision": "8189ebe3df231c8e3ab3",
     "url": "/static/css/2.7157e428.chunk.css"
   },
   {
-    "revision": "87bd680e8d9edafe1a01",
-    "url": "/static/js/2.8483e10b.chunk.js"
+    "revision": "8189ebe3df231c8e3ab3",
+    "url": "/static/js/2.5154141d.chunk.js"
   },
   {
     "revision": "c87550333da8df8ab4c80bd1d6e9defb",
-    "url": "/static/js/2.8483e10b.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.5154141d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5c8414c3877cef85c809",
-    "url": "/static/js/main.660f5334.chunk.js"
+    "revision": "716e9997cabfe46aa7e2",
+    "url": "/static/js/main.f927d2be.chunk.js"
   },
   {
     "revision": "2afe0c77fab43d6c5751",
@@ -208,12 +208,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sykehus4.5fcfa841.jpg"
   },
   {
-    "revision": "770f91cb497938a7c6cf27182434018b",
-    "url": "/static/media/sykehusbygg.770f91cb.jpg"
+    "revision": "767405553cc0e151e3362b2593857b02",
+    "url": "/static/media/sykehus6.76740555.jpg"
   },
   {
-    "revision": "e81690245b85212597b5551dbdd6362b",
-    "url": "/static/media/sykehushyller.e8169024.jpg"
+    "revision": "770f91cb497938a7c6cf27182434018b",
+    "url": "/static/media/sykehusbygg.770f91cb.jpg"
   },
   {
     "revision": "a2d1274d7f87fb769d91e7ad468fd344",
