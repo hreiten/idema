@@ -8,7 +8,6 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Header, { RoutePaths } from './Menu/Header';
 import LargeFooter from './components/LargeFooter';
 import Home from './LandingPage/Home';
-import Projects from './Projects/Projects';
 import Kontakt from './About/Kontakt';
 import About from './About/About';
 import Helse from './Helse/Helse';
@@ -58,7 +57,6 @@ const App = () => (
                   <Route exact path={RoutePaths.SKOLE} component={Skole} />
                   <Route exact path={RoutePaths.BARNEHAGE} component={Barnehage} />
                   <Route exact path={RoutePaths.BYGG} component={Bygg} />
-                  <Route exact path={RoutePaths.PROJECTS} component={Projects} />
                   <Route exact path={RoutePaths.CONTACT} component={Kontakt} />
                   <Route exact path={RoutePaths.ABOUT} component={About} />
                 </RootContainer>
