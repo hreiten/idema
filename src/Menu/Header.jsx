@@ -40,7 +40,7 @@ const Container = styled.div`
   justify-content: space-between;
   max-width: 2500px;
   margin: 0 auto;
-  padding: 30px 5% 10px 5%;
+  padding: 30px 10% 10px;
 
   @media (max-width: ${ScreenSize.LG_MIN}) {
     padding: 10px 10%;

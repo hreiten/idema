@@ -19,7 +19,7 @@ const Text = styled.div`
   margin: 0 auto;
   padding: 2rem;
   left: 7%;
-  top: 5%;
+  top: 18%;
   color: #fff;
   width: 60%;
 
@@ -27,11 +27,11 @@ const Text = styled.div`
     font-family: 'Libre Franklin', sans-serif;
     padding-left: 2.5rem;
     text-transform: uppercase;
-    font-size: 3.8em;
+    font-size: 3em;
   }
 
-  @media (max-width: ${ScreenSize.LG_MID}) {
-    top: 10%;
+  @media (max-width: ${ScreenSize.LG_MAX}) {
+    top: 15%;
     h1 {
       font-size: 2.5em;
     }

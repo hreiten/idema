@@ -75,18 +75,18 @@ const About = () => {
         <TextWrapper>
           <h1>OM OSS</h1>
           <p>
-            IDEMA AS er innredningsentrerprenør og totalleverandør av fast innredning til offentlig og privat sektor.{' '}
+            IDEMA AS er innredningsentreprenør og totalleverandør av fast innredning til offentlig og privat sektor.{' '}
           </p>
           <Areas>
             <p> Våre største og viktigste forretningsområder er: </p>
-            <p> Sykehus, Sykehjem, Skoler, Barnehager, Kulturinstitusjoner, Næringsbygg og Hoteller</p>
+            <p> Sykehus, sykehjem, skoler, barnehager, kulturinstitusjoner, næringsbygg og hoteller.</p>
           </Areas>
           <p>
-            IDEMA A/S ble etablert i Trondheim i 1985 og har i dag hovedkontor på Haslum, I Bærum. Idema består av 13
-            ansatte i prosjekt og administrasjon, og 12 ansatte arbeidsledere og montører.{' '}
+            Idema ble etablert i Trondheim i 1985 og har i dag hovedkontor på Haslum, i Bærum. Idema består av 12
+            ansatte i prosjekt og administrasjon, og 14 ansatte arbeidsledere og montører.{' '}
           </p>{' '}
           <p>
-            Vi har fokus på riktig kvalitet tilpasset kundens behov og være en god samarbeidspartner i
+            Vi har fokus på riktig kvalitet tilpasset kundens behov, og være en god samarbeidspartner i
             prosjektgjennomføring.
           </p>
         </TextWrapper>

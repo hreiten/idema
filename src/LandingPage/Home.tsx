@@ -60,7 +60,7 @@ const Text = styled.div`
     font-family: 'Libre Franklin', sans-serif;
     color: var(--idema-color);
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 0;
     }
 
