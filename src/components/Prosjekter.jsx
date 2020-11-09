@@ -5,10 +5,6 @@ import { Facebook } from '@styled-icons/entypo-social/Facebook';
 import LinkImage from '../components/LinkImage';
 import { ScreenSize } from '../shared/ScreenSize';
 
-import akerbrygge1 from '../images/akerbrygge1.jpg';
-import theWell from '../images/theWellGarderobe.jpg';
-import fornebu from '../images/kjokkenFornebu.jpg';
-
 const Container = styled.div`
   margin: 2rem 2rem 5rem;
   @media (max-width: ${ScreenSize.MD_MIN}) {
@@ -37,7 +33,7 @@ const LinkImages = styled.div`
   } ;
 `;
 
-const Byggprosjekter = () => {
+const Prosjekter = ({linkList}) => {
   return (
     <Container>
       <h2>Referanseprosjekter</h2>
@@ -52,26 +48,26 @@ const Byggprosjekter = () => {
       </p>
       <LinkImages>
         <LinkImage
-          src={fornebu}
-          alt=""
-          url="https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=1725627557459049&ref=page_internal"
-          text="Fornebuporten"
+          src={linkList[0].src}
+          alt={linkList[0].alt}
+          url={linkList[0].url}
+          text={linkList[0].text}
         />
         <LinkImage
-          src={theWell}
-          alt=""
-          url="https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=1725580857463719&ref=page_internal"
-          text="The Well"
+          src={linkList[1].src}
+          alt={linkList[1].alt}
+          url={linkList[1].url}
+          text={linkList[1].text}
         />
         <LinkImage
-          src={akerbrygge1}
-          alt=""
-          url="https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=1329740403714435&ref=page_internal"
-          text="F16 Akerbrygge"
+          src={linkList[2].src}
+          alt={linkList[2].alt}
+          url={linkList[2].url}
+          text={linkList[2].text}
         />
       </LinkImages>
     </Container>
   );
 };
 
-export default Byggprosjekter;
+export default Prosjekter;

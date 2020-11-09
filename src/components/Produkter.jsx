@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ScreenSize } from '../shared/ScreenSize';
-import { naeringsbyggProduktliste } from '../helpers/productlist';
 
 const Container = styled.div`
   border-bottom: 1px solid grey;
@@ -32,12 +31,12 @@ const ListItem = styled.span`
   color: var(--text-color);
 `;
 
-const Byggprodukter = () => {
+const Produkter = ({productList}) => {
   return (
     <Container>
       <h2>Produktområder</h2>
       <Grid>
-        {naeringsbyggProduktliste.map((p, i) => (
+        {productList.map((p, i) => (
           <ListItem key={i}>{p.title}</ListItem>
         ))}
       </Grid>
@@ -45,4 +44,4 @@ const Byggprodukter = () => {
   );
 };
 
-export default Byggprodukter;
+export default Produkter;

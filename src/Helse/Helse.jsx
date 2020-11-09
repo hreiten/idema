@@ -1,102 +1,70 @@
 import React from 'react';
-import styled from 'styled-components';
-
-import { useMedia } from '../helpers/useMedia';
-import { ScreenSize } from '../shared/ScreenSize';
 
 import sykehusbilde1 from '../images/sykehus1.jpg';
 import sykehusbilde2 from '../images/lhlresep.jpg';
 import sykehusbilde3 from '../images/sykehus4.jpg';
 import sykehusbilde6 from '../images/sykehus6.jpg';
 
-import SykehusProdukter from './SykehusProdukter';
-import SykehusProsjekter from './SykehusProsjekter';
+import { Produktliste } from './produktliste';
 
-const Container = styled.div`
-  width: 100%;
-  height: auto;
-`;
+import bodoSykehus from '../images/bodoSykehus.jpg';
+import lhlsykehus from '../images/Lhl-vindu.jpg';
+import ulriksdalsykehus from '../images/ulriksdalSykehus.jpg';
 
-const HeadingWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
+import Lobpage from '../components/Lobpage';
 
-const HeadingText = styled.div`
-  padding: 1rem 1rem;
-  color: var(--idema-color);
-  width: 40%;
-  @media (max-width: ${ScreenSize.MD_MIN}) {
-    width: 100%;
-  } ;
-`;
-
-const Title = styled.h1`
-  display: block;
-  padding: 2.5rem 1rem 0rem;
-  font-size: 4.5em;
-  line-height: 1.5em;
- 
-  @media (max-width: ${ScreenSize.LG_MID}) {
-    padding: 0;
-    font-size: 2.5em;
-    line-height: 1.5em;
-  } ;
-
-  &:after {
-    content: '';
-    border-bottom: #ffa500 0.2rem solid;
-    position: relative;
-    display: block;
-    width: 4.25rem;
-    margin: 0 !important;
+const ImageList = [
+  {
+    src: sykehusbilde2,
+    alt: "sykehus2"
+  },
+  {
+    src: sykehusbilde6,
+    alt: "sykehus6"
+  },
+  {
+    src: sykehusbilde3,
+    alt: "sykehus3"
+  },
+  {
+    src: sykehusbilde1,
+    alt: "sykehus1"
   }
-`;
+]
 
-const Description = styled.p`
-  padding: 0 1rem;
-  @media (max-width: ${ScreenSize.MD_MIN}) {
-    padding: 0;
-  } ;
-`;
-
-const HeadingImages = styled.div`
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 3rem; 
-`;
-
-const Image = styled.img`
-  width: 50%;
-  height: auto;
-  align-self: flex-start; 
-  padding: 1rem;
-`;
+const LinkList = [
+  {
+    src: lhlsykehus,
+    alt: "LHL sykehus Gardemoen",
+    url: "https://www.facebook.com/media/set?vanity=idemaas&set=a.1725563717465433",
+    text: "LHL sykehus Gardemoen"
+  },
+  {
+    src: bodoSykehus,
+    alt: "Bodø sykehus",
+    url: "https://www.facebook.com/media/set/?vanity=idemaas&set=a.1025602947461517",
+    text: "Bodø sykehus"
+  },
+  {
+    src: ulriksdalsykehus,
+    alt: "Haukeland sykehus - BUS",
+    url: "https://www.facebook.com/media/set/?vanity=idemaas&set=a.1725572527464552",
+    text: "Haukeland sykehus - BUS "
+  }
+];
 
 const Helse = () => {
-  const isSmallScreen = useMedia(`(max-width: ${ScreenSize.MD_MIN})`);
-
   return (
-    <Container>
-      <HeadingWrapper>
-        <HeadingText>
-          <Title>Helse og omsorg</Title>
-          <Description>All fast innredninig til sykehus og sykehjem.</Description>
-        </HeadingText>
-        {!isSmallScreen && (
-          <HeadingImages>
-            <Image src={sykehusbilde2} alt="Sykehusbilde 1" />
-            <Image src={sykehusbilde6} alt="Sykehusbilde 1" />
-            <Image src={sykehusbilde3} alt="Sykehusbilde 2" />
-            <Image src={sykehusbilde1} alt="Sykehusbilde 3" />
-          </HeadingImages>
-        )}
-      </HeadingWrapper>
-      <SykehusProdukter />
-      <SykehusProsjekter />
-    </Container>
+    <Lobpage 
+      title={"Helse og omsorg"}  
+      description={"All fast innredninig til sykehus og sykehjem."}
+      imageList={ImageList}
+      productList={Produktliste}
+      linkList={LinkList} 
+    />
   );
 };
 
 export default Helse;
+
+
