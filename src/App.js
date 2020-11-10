@@ -50,7 +50,7 @@ const App = () => {
 
   return (
   <div className="main-wrapper">
-    <Router>
+    <Router history={history}>
       <Header />
       <ScrollToTop />
       
