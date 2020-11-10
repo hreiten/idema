@@ -8,16 +8,13 @@ import BurgerMenu from './BurgerMenu';
 import NavBar from './NavBar';
 
 export const RoutePaths = {
-  PRODUCTS: '/produkter',
-  PROJECTS: '/prosjekter',
   CONTACT: '/kontakt',
-  BUSINESS_AREAS: '/forretningsområder',
   ABOUT: '/om',
   LANDING: '/',
-  HELSE: '/helse',
-  SKOLE: '/undervisning',
-  BARNEHAGE: '/barnehager',
-  BYGG: '/naeringsbygg',
+  HELSE: '/sykehusinnredning',
+  SKOLE: '/skoleinnredning',
+  BARNEHAGE: '/barnehageinnredning',
+  BYGG: '/kontorinnredning',
 };
 
 const menuItems = [
