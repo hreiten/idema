@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.04b13e6f.chunk.js",
+    "main.js": "/static/js/main.a2bf19f7.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.7b0e7bb8.js",
     "static/css/2.7157e428.chunk.css": "/static/css/2.7157e428.chunk.css",
-    "static/js/2.e654f44b.chunk.js": "/static/js/2.e654f44b.chunk.js",
+    "static/js/2.2103f384.chunk.js": "/static/js/2.2103f384.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.71f05bf66cf6bcf3eda16e7acef5db23.js": "/precache-manifest.71f05bf66cf6bcf3eda16e7acef5db23.js",
+    "precache-manifest.160156a7c2ad67b25b9152fe61c6711b.js": "/precache-manifest.160156a7c2ad67b25b9152fe61c6711b.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.e654f44b.chunk.js.LICENSE.txt": "/static/js/2.e654f44b.chunk.js.LICENSE.txt",
+    "static/js/2.2103f384.chunk.js.LICENSE.txt": "/static/js/2.2103f384.chunk.js.LICENSE.txt",
     "static/media/webfonts.css": "/static/media/e0df2bb1-32d4-4f28-a889-9e712e9e5032.a161abd6.eot",
     "static/media/IDEMALOGO.jpg": "/static/media/IDEMALOGO.4d27645e.jpg",
     "static/media/Lhl-vindu.jpg": "/static/media/Lhl-vindu.c3041a72.jpg",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.7b0e7bb8.js",
     "static/css/2.7157e428.chunk.css",
-    "static/js/2.e654f44b.chunk.js",
-    "static/js/main.04b13e6f.chunk.js"
+    "static/js/2.2103f384.chunk.js",
+    "static/js/main.a2bf19f7.chunk.js"
   ]
 }
