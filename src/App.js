@@ -2,8 +2,10 @@ import '@bekk/storybook/build/lib/constants/styles.css';
 import '@bekk/storybook/build/lib/fonts/webfonts.css';
 
 import React from 'react';
+import ReactGA from 'react-ga';
 import styled  from 'styled-components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Header, { RoutePaths } from './Menu/Header';
 import LargeFooter from './components/LargeFooter';
@@ -36,7 +38,17 @@ const Wrapper = styled.div`
 `;
 
 
-const App = () => (
+const App = () => {
+  
+  const history = createBrowserHistory();
+  
+  history.listen(location => {
+    ReactGA.initialize('G-MLYCZSWL7Q');
+    ReactGA.set({ page: location.pathname});
+    ReactGA.pageview(location.pathname);
+  })
+
+  return (
   <div className="main-wrapper">
     <Router>
       <Header />
@@ -71,5 +83,6 @@ const App = () => (
     </Router>
   </div>
 );
+};
 
 export default App;
