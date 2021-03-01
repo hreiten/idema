@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dca308e96bea235bed6822eba97c9eee",
+    "revision": "cba84739c5243f54e36ea7a80fb73254",
     "url": "/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.2103f384.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eeb726553e846a8f1f7f",
-    "url": "/static/js/main.0f61225a.chunk.js"
+    "revision": "c6b339774d91ca07355a",
+    "url": "/static/js/main.f8823dcf.chunk.js"
   },
   {
     "revision": "2afe0c77fab43d6c5751",
@@ -192,12 +192,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/skole2.742a7d48.jpg"
   },
   {
-    "revision": "7023784a40484c5374d03acd1e17833c",
-    "url": "/static/media/skole3.7023784a.jpg"
-  },
-  {
     "revision": "3dae18f8cb9161895a172b774c56e1d7",
     "url": "/static/media/skole4.3dae18f8.jpg"
+  },
+  {
+    "revision": "7f9789f8c0b1f0933a9c2a8be640ca73",
+    "url": "/static/media/skole6.7f9789f8.jpg"
   },
   {
     "revision": "859bd31939a8604f41705c765c03a413",
