@@ -31,8 +31,8 @@ const Footer = () => {
     <Container>
       <Content>
         IDEMA As | post@idema.no {'| '}
-        <a href="https://www.google.com/maps/place/Nesveien+13,+1344+Haslum/@59.9164783,10.5532062,17z/data=!3m1!4b1!4m5!3m4!1s0x4641132ffed89cfd:0xe6b95102e078aa7a!8m2!3d59.9164783!4d10.5554002">
-          Nesveien 13 1344 Haslum
+        <a href="https://www.google.com/maps/place/L%C3%B8xaveien+15,+1351+Rud/@59.9051976,10.486582,17z/data=!3m1!4b1!4m5!3m4!1s0x4641139e8c0911f5:0xdba03f821a0654e1!8m2!3d59.9051976!4d10.4887707">
+          Løxaveien 15 1351 Rud
         </a>
         {' | '}
         <a href="https://www.facebook.com/idemaas/">Facebook</a>

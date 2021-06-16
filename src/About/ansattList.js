@@ -6,10 +6,10 @@ export const ansattList = [
     mail: 'roar.buoen@idema.no',
   },
   {
-    name: 'Aleksander Borge',
+    name: 'Alexander Borge',
     title: 'Prosjektleder',
     phone: '+47 480 20 042',
-    mail: 'aleksander.borge@idema.no',
+    mail: 'alexander.borge@idema.no',
   },
   {
     name: 'Andreas Buøen',

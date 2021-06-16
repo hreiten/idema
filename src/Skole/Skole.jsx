@@ -2,7 +2,7 @@ import React from 'react';
 
 import skole1 from '../images/skapValle.jpg';
 import skole2 from '../images/skole2.jpg';
-import skole3 from '../images/skole3.jpg';
+import skole3 from '../images/skole6.jpg';
 import skole4 from '../images/skole4.jpg';
 
 import vossVgs from '../images/voss-vgs.jpg';
