@@ -36,19 +36,19 @@ const LinkList = [
   {
     src: lhlsykehus,
     alt: "LHL sykehus Gardemoen",
-    url: "https://www.facebook.com/media/set?vanity=idemaas&set=a.1725563717465433",
+    url: "https://www.facebook.com/media/set/?set=a.1725563717465433&type=3",    
     text: "LHL sykehus Gardemoen"
   },
   {
     src: bodoSykehus,
     alt: "Bodø sykehus",
-    url: "https://www.facebook.com/media/set/?vanity=idemaas&set=a.1025602947461517",
+    url: "https://www.facebook.com/media/set/?set=a.1025602947461517&type=3",
     text: "Bodø sykehus"
   },
   {
     src: ulriksdalsykehus,
     alt: "Haukeland sykehus - BUS",
-    url: "https://www.facebook.com/media/set/?vanity=idemaas&set=a.1725572527464552",
+    url: "https://www.facebook.com/media/set/?set=a.1725572527464552&type=3",
     text: "Haukeland sykehus - BUS "
   }
 ];
