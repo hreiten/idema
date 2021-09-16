@@ -35,19 +35,19 @@ const LinkList = [
   {
     src: fornebu,
     alt: "Fornebuporten",
-    url: "https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=1725627557459049&ref=page_internal",
+    url: "https://www.facebook.com/media/set/?set=a.1725627557459049&type=3",
     text: "Fornebuporten"
   },
   {
     src: theWell,
     alt: "The Well",
-    url: "https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=1725580857463719&ref=page_internal",
+    url: "https://www.facebook.com/media/set/?set=a.1725580857463719&type=3",
     text: "The Well"
   },
   {
     src: akerbrygge1,
     alt: "F16 Akerbrygge",
-    url: "https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=1329740403714435&ref=page_internal",
+    url: "https://www.facebook.com/media/set/?set=a.1329740403714435&type=3",
     text: "F16 Akerbrygge"
   }
 ];
