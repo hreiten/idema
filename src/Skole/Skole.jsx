@@ -36,19 +36,19 @@ const LinkList = [
   {
     src: holmenSkole,
     alt: "Holmen skole",
-    url: "https://www.facebook.com/media/set/?vanity=idemaas&set=a.1725567300798408",
+    url: "https://www.facebook.com/media/set/?set=a.1725567300798408&type=3",
     text: "Holmen skole"
   },
   {
     src: valleLab,
     alt: "Valle VGS",
-    url: "https://www.facebook.com/media/set?vanity=idemaas&set=a.1725669087454896",
+    url: "https://www.facebook.com/media/set/?set=a.1725669087454896&type=3",
     text: "Valle VGS"
   },
   {
     src: vossVgs,
     alt: "Voss VGS",
-    url: "https://www.facebook.com/media/set?vanity=idemaas&set=a.1725618734126598",
+    url: "https://www.facebook.com/media/set/?set=a.1725618734126598&type=3",
     text: "Voss VGS"
   }
 ];
