@@ -34,19 +34,19 @@ const LinkList = [
   {
     src: Margarinfabrikken,
     alt: "Margarinfabrikken barnehage",
-    url: "https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=738412599513888&ref=page_internal",
+    url: "https://www.facebook.com/media/set/?set=a.738412599513888&type=3",
     text: "Margarinfabrikken barnehage"
   },
   {
     src: Trosterud,
     alt: "Trosterud barnehage",
-    url: "https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=738415462846935&ref=page_internal",
+    url: "https://www.facebook.com/media/set/?set=a.738415462846935&type=3",
     text: "Trosterud barnehage"
   },
   {
     src: Radarveien,
     alt: "Radarveien barnehage",
-    url: "https://www.facebook.com/pg/idemaas/photos/?tab=album&album_id=738416386180176&ref=page_internal",
+    url: "https://www.facebook.com/media/set/?set=a.738416386180176&type=3",
     text: "Radarveien barnehage"
   }
 ];
