@@ -31,7 +31,13 @@ const Wrapper = styled.div`
   margin: 0 2rem;
   h3, p, a {
     color: white;
-  }
+  };
+  h5 {
+    font-family: 'Work Sans', sans-serif;
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
+    font-size: 1em;
+  };
 `;
 
 const LinkToFace = styled.div`
@@ -94,13 +100,12 @@ const LargeFooter = () => {
      <Wrapper>
         <h3>Besøksadresse</h3>
         <a href="https://www.google.com/maps/place/L%C3%B8xaveien+15,+1351+Rud/@59.9051976,10.486582,17z/data=!3m1!4b1!4m5!3m4!1s0x4641139e8c0911f5:0xdba03f821a0654e1!8m2!3d59.9051976!4d10.4887707">
-        <p>Løxaveien 15</p>
-        <p>1351 Rud</p>
+        <p>Løxaveien 15 1351 Rud</p>
         </a>
       </Wrapper>
       <Wrapper>
-        <p>67 51 69 00</p>
-        <p>post@idema.no</p>
+        <h3><Link to={RoutePaths.CONTACT} > Kontakt oss </Link></h3>
+        <h5>67 51 69 00    {'   '}  |    {'   '}  post@idema.no</h5>
         <p>Org.nr. 937757875</p>
       </Wrapper>
       <LinkToFace>
