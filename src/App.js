@@ -3,7 +3,7 @@ import '@bekk/storybook/build/lib/fonts/webfonts.css';
 
 import React from 'react';
 import ReactGA from 'react-ga';
-import styled  from 'styled-components';
+import styled from 'styled-components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
@@ -16,6 +16,7 @@ import Helse from './Helse/Helse';
 import Skole from './Skole/Skole';
 import Barnehage from './Barnehage/Barnehage';
 import Bygg from './Bygg/Bygg';
+import Jobb from './Jobb/Jobb';
 import ScrollToTop from './helpers/ScrollToTopController';
 import { RootContainer } from './shared/StyledComponents';
 
@@ -39,50 +40,51 @@ const Wrapper = styled.div`
 
 
 const App = () => {
-  
+
   const history = createBrowserHistory();
-  
+
   history.listen(location => {
     ReactGA.initialize('G-MLYCZSWL7Q');
-    ReactGA.set({ page: location.pathname});
+    ReactGA.set({ page: location.pathname });
     ReactGA.pageview(location.pathname);
   })
 
   return (
-  <div className="main-wrapper">
-    <Router history={history}>
-      <Header />
-      <ScrollToTop />
-      
-      <Route
-        render={({ location }) => (
-          <Wrapper>
-          <TransitionGroup>
-            <CSSTransition
-            key={location.pathname}
-            timeout={{ enter: 300, exit: 300 }}
-            classNames={'fade'}>
-              <Switch location={location} key={location.pathname}>
-                <Route exact path={RoutePaths.LANDING} component={Home} />
-                <RootContainer>
-                  <Route exact path={RoutePaths.HELSE} component={Helse} />
-                  <Route exact path={RoutePaths.SKOLE} component={Skole} />
-                  <Route exact path={RoutePaths.BARNEHAGE} component={Barnehage} />
-                  <Route exact path={RoutePaths.BYGG} component={Bygg} />
-                  <Route exact path={RoutePaths.CONTACT} component={Kontakt} />
-                  <Route exact path={RoutePaths.ABOUT} component={About} />
-                </RootContainer>
-              </Switch>
-            </CSSTransition>
-          </TransitionGroup>
-          </Wrapper>
-        )}
-      />
+    <div className="main-wrapper">
+      <Router history={history}>
+        <Header />
+        <ScrollToTop />
 
-      <LargeFooter />
-    </Router>
-  </div>
-);
+        <Route
+          render={({ location }) => (
+            <Wrapper>
+              <TransitionGroup>
+                <CSSTransition
+                  key={location.pathname}
+                  timeout={{ enter: 300, exit: 300 }}
+                  classNames={'fade'}>
+                  <Switch location={location} key={location.pathname}>
+                    <Route exact path={RoutePaths.LANDING} component={Home} />
+                    <RootContainer>
+                      <Route exact path={RoutePaths.HELSE} component={Helse} />
+                      <Route exact path={RoutePaths.SKOLE} component={Skole} />
+                      <Route exact path={RoutePaths.BARNEHAGE} component={Barnehage} />
+                      <Route exact path={RoutePaths.BYGG} component={Bygg} />
+                      <Route exact path={RoutePaths.CONTACT} component={Kontakt} />
+                      <Route exact path={RoutePaths.ABOUT} component={About} />
+                      <Route exact path={RoutePaths.JOBB} component={Jobb} />
+                    </RootContainer>
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            </Wrapper>
+          )}
+        />
+
+        <LargeFooter />
+      </Router>
+    </div>
+  );
 };
 
 export default App;

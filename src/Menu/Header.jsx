@@ -15,12 +15,14 @@ export const RoutePaths = {
   SKOLE: '/skoleinnredning',
   BARNEHAGE: '/barnehageinnredning',
   BYGG: '/kontorinnredning',
+  JOBB: '/jobb'
 };
 
 const menuItems = [
   { title: 'Hjem', path: RoutePaths.LANDING },
   { title: 'Om oss', path: RoutePaths.ABOUT },
   { title: 'Kontakt oss', path: RoutePaths.CONTACT },
+  { title: 'Ledige stillinger', path: RoutePaths.JOBB }
 ];
 
 const dropdownItems = [

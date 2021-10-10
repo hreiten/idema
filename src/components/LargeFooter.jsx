@@ -70,6 +70,7 @@ const LargeFooter = () => {
           <h3>For spørsmål, informasjon eller råd, ta <Link to={RoutePaths.CONTACT}> kontakt med oss!</Link></h3>
           <p>post@idema.no</p>
           <p>67 51 69 00</p>
+          <p>Org.nr. 937757875</p>
           <a href="https://www.google.com/maps/place/L%C3%B8xaveien+15,+1351+Rud/@59.9051976,10.486582,17z/data=!3m1!4b1!4m5!3m4!1s0x4641139e8c0911f5:0xdba03f821a0654e1!8m2!3d59.9051976!4d10.4887707">
             Løxaveien 15 1351 Rud
           </a>
@@ -101,6 +102,7 @@ const LargeFooter = () => {
         <h3><Link to={RoutePaths.CONTACT} > Kontakt oss </Link></h3>
         <p>67 51 69 00</p>
         <p>post@idema.no</p>
+        <p>Org.nr. 937757875</p>
       </Wrapper>
       <LinkToFace>
       <a href="https://www.facebook.com/idemaas/">

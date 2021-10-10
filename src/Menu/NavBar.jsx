@@ -26,10 +26,14 @@ const Item = styled.span`
 
 const DropdownList = styled.ul`
   position: absolute;
-  min-width: 300px;
+  min-width: 200px;
   min-height: fit-content;
   overflow: hidden;
-  background-color: white;
+  background-color: #F6F6F6;
+  background-image: linear-gradient(white, #F6F6F6);
+  border-left: 0.5px solid #F6F6F6;
+  border-bottom: 0.5px solid #F6F6F6;
+  border-right: 0.5px solid #F6F6F6;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -73,6 +77,7 @@ const NavBar = ({ dropdownMenuItems, menuItems }) => {
       </Item>
       <NavItem to={RoutePaths.ABOUT} replace>Om oss</NavItem>
       <NavItem to={RoutePaths.CONTACT} replace>Kontakt Oss</NavItem>
+      <NavItem to={RoutePaths.JOBB} replace>Ledige stillinger</NavItem>
     </Nav>
   );
 };
