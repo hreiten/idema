@@ -99,7 +99,6 @@ const LargeFooter = () => {
         </a>
       </Wrapper>
       <Wrapper>
-        <h3><Link to={RoutePaths.CONTACT} > Kontakt oss </Link></h3>
         <p>67 51 69 00</p>
         <p>post@idema.no</p>
         <p>Org.nr. 937757875</p>

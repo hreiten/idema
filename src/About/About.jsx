@@ -77,8 +77,8 @@ const About = () => {
          
           <p>
             IDEMA as er en av landets ledende leverandører av fast inventar til entreprenørbransjen. IDEMA er et firma med historie tilbake til 1985. 
-            Omsetning var 145 MNOK i 2020 og firmaet er i fortsatt vekst. Det er 30 ansatte - 12
-            ansatte i prosjekt og administrasjon, og 14 ansatte arbeidsledere og montører. Hovedkontoret ligger i nye og moderne lokaler på Rud i Bærum. 
+            Omsetning var 145 MNOK i 2020 og firmaet er i fortsatt vekst. Det er 30 ansatte - 14
+            ansatte i prosjekt og administrasjon, og 16 ansatte arbeidsledere og montører. Hovedkontoret ligger i nye og moderne lokaler på Rud i Bærum. 
             Bedriften leverer og monterer inventar til ulike typer bygg til offentlige og private kunder. 
             Produktspekteret omfatter kjøkken, bad, garderober, skranker, glassløsninger etc, sykehus-, laboratorie-, naturfag- og spesialinnredninger. 
             {' '}
